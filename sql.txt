@@ -1,0 +1,22 @@
+grouping sample
+___________________________
+
+CREATE OR REPLACE  FUNCTION "EWADM"."ROTATE_VAL" (
+ s_id number
+)
+return varchar2
+as
+val_part varchar2(100):='';
+begin 
+for c1 in (select val from test_sql where id=s_id) loop
+if (val_part is null) then
+val_part:=c1.val;
+else
+val_part:=val_part||','||c1.val;
+end if;
+end loop;
+return val_part;
+end;
+
+select id, rotate_val(id) value_display 
+from test_sql group by id
