@@ -1,0 +1,23 @@
+# BEGIN klasz
+ErrorDocument 404 /home.php
+DirectoryIndex /home.php
+php_value session.use_trans_sid 0
+php_value register_globals off
+
+<Files *.php>
+    deny from all
+</Files>
+
+<Files captcha.php>
+    allow from all
+</Files>
+
+<Files *.tpl>
+    deny from all
+</Files>
+
+<Files *.inc.php>
+    deny from all
+</Files>
+
+# END klasz
