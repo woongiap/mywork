@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+  int age, year = 1977;
+
+  age = 2010 - year;
+  printf("my age is %d\n", age);
+  return 0;
+}

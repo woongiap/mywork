@@ -1,0 +1,35 @@
+this file created in cool branch
+
+func1() {
+	this line done in cool
+}
+
+func2() {
+	fix bug in trunk
+}
+
+func3() {
+	this line done in trunk
+}
+
+func4() {
+	new func in cool
+}
+
+func5() {
+	func5 in trunk
+}	
+
+trunk_func6() {
+	hello add thing
+}
+
+cool_func7() {
+	cool func
+}
+
+cool_func8() {
+	cool func start:cool add this
+	and this :end
+}
+

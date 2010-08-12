@@ -1,0 +1,594 @@
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 1
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+
+TRADER CODE D08  NAME Name of D08
+
+CH3162 CHUA GEN KIANG @ CHUA GIN  IC000000212 29/12/06   IC    PN00000672            34.23                253           2.37
+DI038  DINESH KUMAR A/L BACHULAL  IC000000216 29/12/06   IC    PN00000691            12.39                253           0.86
+EB009  FONG HENG LEONG ***        IC000000373 07/07/07   IC    MD000000004            0.41                 66           0.01
+EB009  FONG HENG LEONG ***        IC000000374 07/07/07   IC    PN00000332             2.20                 66           0.05
+EB009  FONG HENG LEONG ***        MD000000375 07/07/07   MD    PN00000332           191.13                              0.00
+EB009  FONG HENG LEONG ***        MD000000001 28/11/06   MD    PN00000296            29.44                259           2.51
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000018 04/12/06   IC    PN00000047             4.58                263           0.33
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000019 04/12/06   IC    PN00000045            76.29                263           5.50
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000020 04/12/06   IC    PN00000048            15.34                263           1.11
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000021 04/12/06   IC    PN00000050            24.06                263           1.73
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000022 04/12/06   IC    PN00000049             9.65                263           0.70
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000070 29/12/06   IC    PN00000337           135.84                253           9.42
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000131 29/12/06   IC    PN00000045           686.58                253          47.59
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000132 29/12/06   IC    PN00000046            26.25                253           1.82
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000133 29/12/06   IC    PN00000047            41.20                253           2.86
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000134 29/12/06   IC    PN00000048           138.06                253           9.57
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000135 29/12/06   IC    PN00000049            86.84                253           6.02
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000136 29/12/06   IC    PN00000050           217.26                253          15.06
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000222 29/12/06   IC    PN00000703           137.24                253           9.51
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000223 29/12/06   IC    PN00000704            65.76                253           4.56
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000224 29/12/06   IC    PN00000708            82.91                253           5.75
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000225 29/12/06   IC    PN00000709           137.59                253           9.54
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000360 29/12/06   IC    IC000000018            0.02                253           0.00
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000361 29/12/06   IC    IC000000019            0.40                253           0.03
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000362 29/12/06   IC    IC000000020            0.08                253           0.01
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000363 29/12/06   IC    IC000000021            0.13                253           0.01
+EB178  LEE YU YONG @ LEE YUEN YI  IC000000364 29/12/06   IC    IC000000022            0.05                253           0.00
+JE060  JENNY TAY HUI WOON ***     IC000000082 29/12/06   IC    PN00000373            48.44                253           3.36
+KO348  KOLJEET SINGH A/L SAMAH S  IC000000384 07/07/07   IC    PN00001033             3.03                 66           0.07
+KO348  KOLJEET SINGH A/L SAMAH S  IC000000385 07/07/07   IC    PN00001033            16.33                 66           0.35
+RA564  RAJAMOORTHY A/L APPLASAMY  IC000000114 29/12/06   IC    PN00000462            18.82                253           1.30
+RA564  RAJAMOORTHY A/L APPLASAMY  IC000000115 29/12/06   IC    PN00000463            62.23                253           4.31
+RA564  RAJAMOORTHY A/L APPLASAMY  IC000000410 02/01/07   IC    PN00000462             1.39                253           0.10
+TA1021 TAN HENG AI **             IC000000175 29/12/06   IC    PN00000186            76.18                253           5.28
+TA1021 TAN HENG AI **             IC000000185 29/12/06   IC    PN00000481            68.56                253           4.75
+TA1021 TAN HENG AI **             IC000000274 29/12/06   IC    PN00000926            53.47                253           3.71
+
+TOTAL BY TRADER (D08) :                                                           2,504.38           0.00             160.15
+
+
+
+TRADER CODE D83  NAME Name of D83 
+
+CH3266 CHEAH SEE YEN ***          IC000000068 29/12/06   IC    PN00000327            26.46                253           1.83
+LE1201 LEONG YIP SAU ***          IC000000150 29/12/06   IC    PN00000100            53.00                253           3.67
+
+TOTAL BY TRADER (D83) :                                                              79.46           0.00               5.50
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 2
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+TRADER CODE D88  NAME Name of D88
+
+CH2874 CHONG CHAI LING ***        IC000000199 29/12/06   IC    PN00000641           304.98                253          21.14
+CH2939 JS NOMS (T) S/B ***        IC000000200 29/12/06   IC    PN00000642            12.57                253           0.87
+CH3150 CHOY KAM LOONG ***         IC000000204 29/12/06   IC    PN00000654             3.30                253           0.23
+CH3150 CHOY KAM LOONG ***         IC000000205 29/12/06   IC    PN00000656            32.51                253           2.25
+CH3150 CHOY KAM LOONG ***         IC000000206 29/12/06   IC    PN00000659             6.15                253           0.43
+CH3150 CHOY KAM LOONG ***         IC000000208 29/12/06   IC    PN00000666             1.70                253           0.12
+CH3153 CHUA ENG KIAT ***          IC000000209 29/12/06   IC    PN00000667            23.33                253           1.62
+CH3153 CHUA ENG KIAT ***          IC000000210 29/12/06   IC    PN00000668             2.59                253           0.18
+CH3156 CHONG VOON CHOONG ***      IC000000123 29/12/06   IC    PN00000029            25.97                253           1.80
+CH3199 CHONG YAU SHIN @ ANDREW *  IC000000066 29/12/06   IC    PN00000325           271.59                253          18.83
+CH3199 CHONG YAU SHIN @ ANDREW *  IC000000125 29/12/06   IC    PN00000032           220.88                253          15.31
+CH3199 CHONG YAU SHIN @ ANDREW *  IC000000214 29/12/06   IC    PN00000675           829.94                253          57.53
+CH3219 CHEH KAH MUN ***           IC000000126 29/12/06   IC    PN00000033            48.44                253           3.36
+CH3219 CHEH KAH MUN ***           IC000000127 29/12/06   IC    PN00000034            25.84                253           1.79
+EB013  NG KOK HIN ***             IC000000129 29/12/06   IC    PN00000041           396.28                253          27.47
+EB013  NG KOK HIN ***             IC000000130 29/12/06   IC    PN00000042         3,257.29                253         225.78
+EB013  NG KOK HIN ***             IC000000217 29/12/06   IC    PN00000692           107.21                253           7.43
+EB016  OOI CHIN HOCK ***          MD000000005 29/11/06   MD    PN00000333           166.95                258          14.16
+EB016  OOI CHIN HOCK ***          MD000000013 30/11/06   MD    PN00000693           533.38                101          17.71
+EB017  YEE TICK SENG **           IC000000218 29/12/06   IC    PN00000694           115.58                253           8.01
+EB017  YEE TICK SENG **           IC000000219 29/12/06   IC    PN00000695            66.12                253           4.58
+EB017  YEE TICK SENG **           IC000000220 29/12/06   IC    PN00000697            50.40                253           3.49
+EB019  YAP KEONG @ YAP KONG NAM   MD000000015 30/11/06   MD    PN00000700           453.27                 75          11.18
+EB019  YAP KEONG @ YAP KONG NAM   MD000000377 07/07/07   MD    PN00001043           545.50                              0.00
+EB019  YAP KEONG @ YAP KONG NAM   IC000000380 07/07/07   IC    PN00000698             1.62                 66           0.04
+EB019  YAP KEONG @ YAP KONG NAM   IC000000381 07/07/07   IC    PN00000698             8.74                 66           0.19
+EB019  YAP KEONG @ YAP KONG NAM   IC000000382 07/07/07   IC    PN00000700             0.97                 66           0.02
+EB019  YAP KEONG @ YAP KONG NAM   IC000000383 07/07/07   IC    PN00000700             5.22                 66           0.11
+EB021  CHOW MONG LENG ***         IC000000069 29/12/06   IC    PN00000335            15.15                253           0.84
+EB021  CHOW MONG LENG ***         IC000000221 29/12/06   IC    PN00000702           139.79                253           7.75
+GU031  GUNANANTHAN A/L NITHYANAN  IC000000079 29/12/06   IC    PN00000364           251.95                253          17.46
+GU031  GUNANANTHAN A/L NITHYANAN  IC000000142 29/12/06   IC    PN00000070           100.94                253           7.00
+HI055  HISYAM BIN SAMSU @ BASIR   IC000000080 29/12/06   IC    PN00000366            23.06                253           1.60
+KE086  KEVIN WONG WEI SAN **      IC000000232 29/12/06   IC    PN00000736            26.98                253           1.87
+LE1035 LEONG CHEE KUEN(VINCENT)   IC000000239 29/12/06   IC    PN00000768            11.59                253           0.80
+LE1195 LEE CHEE HUEY **           IC000000148 29/12/06   IC    PN00000098            36.44                253           2.53
+NO972  NORAIN BINTI MOKHTAR ***   IC000000108 29/12/06   IC    PN00000447             2.12                253           0.15
+TA931  TAN AING JOO **            IC000000176 29/12/06   IC    PN00000194           145.39                253          10.08
+TA931  TAN AING JOO **            IC000000187 29/12/06   IC    PN00000497            77.93                253           5.40
+TA931  TAN AING JOO **            IC000000277 29/12/06   IC    PN00000942            26.55                253           1.84
+
+TOTAL BY TRADER (D88) :                                                           8,376.21           0.00             502.95
+
+
+
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 3
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+TRADER CODE R10  NAME Name of R10
+
+24     BANK ISLAM SECURITIES SDN  DN000000010 05/02/07   AC    3454               1,457.00                227          90.61
+NO125  NOOR RASIDAH BINTI ABU **  IC000000104 29/12/06   IC    PN00000438             3.38                253           0.23
+NO125  NOOR RASIDAH BINTI ABU **  IC000000105 29/12/06   IC    PN00000441            44.38                253           3.08
+NO125  NOOR RASIDAH BINTI ABU **  IC000000258 29/12/06   IC    PN00000858B           28.09                253           1.95
+NO973  NORLIDA BINTI SUPIAN **    IC000000109 29/12/06   IC    PN00000448            20.81                253           1.44
+
+TOTAL BY TRADER (R10) :                                                           1,553.66           0.00              97.31
+
+
+
+TRADER CODE R17  NAME Name of R17
+
+CH3160 CHOOI SOOK YIN **          IC000000124 29/12/06   IC    PN00000030            13.26                253           0.92
+CH3160 CHOOI SOOK YIN **          IC000000211 29/12/06   IC    PN00000671            17.03                253           1.18
+CH3264 CHE MEGAT BIN IBRAHIM **   IC000000067 29/12/06   IC    PN00000326            29.84                253           2.07
+CH3264 CHE MEGAT BIN IBRAHIM **   IC000000215 29/12/06   IC    PN00000679           118.17                253           8.19
+NA140  NAVANEETHARAJ A/L RAJAN    IC000000355 29/12/06   IC    CD000000046            0.23                253           0.02
+NA140  NAVANEETHARAJ A/L RAJAN    IC000000356 29/12/06   IC    CD000000047            0.23                253           0.02
+NO629  NOR'ASIKIN BINTI ABD WAHA  IC000000106 29/12/06   IC    PN00000443B          183.32                253          12.71
+NO629  NOR'ASIKIN BINTI ABD WAHA  IC000000344 29/12/06   IC    CD000000014            6.09                253           0.42
+NO716  NORAIDA BINTI MOHD YUSOF   IC000000107 29/12/06   IC    PN00000444            66.39                253           4.60
+NO716  NORAIDA BINTI MOHD YUSOF   IC000000259 29/12/06   IC    PN00000861            34.48                253           2.39
+NO716  NORAIDA BINTI MOHD YUSOF   IC000000260 29/12/06   IC    PN00000862            38.79                253           2.69
+NO716  NORAIDA BINTI MOHD YUSOF   IC000000261 29/12/06   IC    PN00000863            56.75                253           3.93
+NO923  NORRAIDA BTE ABDULLAH **   IC000000172 29/12/06   IC    PN00000160             0.15                253           0.01
+NO923  NORRAIDA BTE ABDULLAH **   IC000000262 29/12/06   IC    PN00000864             3.80                253           0.26
+OM009  OMAR BIN JAIMON **         IC000000110 29/12/06   IC    PN00000449            30.31                253           2.10
+OM009  OMAR BIN JAIMON **         IC000000111 29/12/06   IC    PN00000451            29.84                253           2.07
+OM009  OMAR BIN JAIMON **         IC000000112 29/12/06   IC    PN00000452            26.86                253           1.86
+OM009  OMAR BIN JAIMON **         IC000000265 29/12/06   IC    PN00000872           100.75                253           6.98
+RA096  JS NOMS (T) S/B PLEDGED S  IC000000113 29/12/06   IC    PN00000460            50.41                253           3.49
+RA096  JS NOMS (T) S/B PLEDGED S  IC000000173 29/12/06   IC    PN00000165            10.80                253           0.75
+ZU059  ZUBAIDAH BINTI MOHD NASIR  IC000000340 29/12/06   IC    PN00001032            60.70                253           4.21
+ZU059  ZUBAIDAH BINTI MOHD NASIR  IC000000347 29/12/06   IC    CD000000017            0.24                253           0.02
+
+TOTAL BY TRADER (R17) :                                                             878.44           0.00              60.89
+
+
+
+TRADER CODE R25  NAME Name of R25
+
+CH1170 CHOO SOOK HENG **          IC000000057 29/12/06   IC    PN00000304             1.32                253           0.09
+CH1575 CHIANG BEE LAN **          IC000000060 29/12/06   IC    PN00000310             3.72                253           0.26
+CH1575 CHIANG BEE LAN **          IC000000195 29/12/06   IC    PN00000636             1.66                253           0.12
+CH1575 CHIANG BEE LAN **          IC000000196 29/12/06   IC    PN00000637             4.05                253           0.28
+CH3012 CHIN YOON THAI **          IC000000342 29/12/06   IC    CD000000001            0.64                253           0.04
+CH3184 CHONG KOK KEAN **          IC000000213 29/12/06   IC    PN00000674            69.61                253           4.83
+LA289  LAI SIEW KHIM **           IC000000234 29/12/06   IC    PN00000749           736.17                253          51.03
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 4
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+LA289  LAI SIEW KHIM **           IC000000348 29/12/06   IC    CD000000018            7.32                253           0.51
+LE1200 LEE YOKE MUI @ LEE SIEW K  IC000000149 29/12/06   IC    PN00000099            51.34                253           3.56
+LO200  LOKE YEW HING @ LOKE KEW   IC000000091 29/12/06   IC    PN00000410           162.79                253          11.28
+LO200  LOKE YEW HING @ LOKE KEW   IC000000092 29/12/06   IC    PN00000411            69.68                253           4.83
+LO200  LOKE YEW HING @ LOKE KEW   IC000000243 29/12/06   IC    PN00000802           401.86                253          27.85
+LO200  LOKE YEW HING @ LOKE KEW   IC000000244 29/12/06   IC    PN00000803           157.87                253          10.94
+LO350  LOKE MO WERN               IC000000245 29/12/06   IC    PN00000808           300.97                253          20.86
+SO203  SOOSILAH A/P KRISHNAN **   IC000000273 29/12/06   IC    PN00000917            28.01                253           1.94
+TA593  TAN SHU MEI **             IC000000186 29/12/06   IC    PN00000490            19.70                253           1.37
+TE198  TEOH EWE HAI **            IC000000188 29/12/06   IC    PN00000499            15.32                253           1.06
+TH222  THONG MEE LING **          IC000000178 29/12/06   IC    PN00000200            25.68                253           1.78
+YO080  YOONG NIM CHEE **          IC000000028 04/12/06   IC    PN00000285             3.99                263           0.29
+YO080  YOONG NIM CHEE **          IC000000180 29/12/06   IC    PN00000284            78.59                253           5.45
+YO080  YOONG NIM CHEE **          IC000000181 29/12/06   IC    PN00000285            35.88                253           2.49
+YO080  YOONG NIM CHEE **          IC000000365 29/12/06   IC    IC000000028            0.02                253           0.00
+
+TOTAL BY TRADER (R25) :                                                           2,176.19           0.00             150.86
+
+
+
+TRADER CODE R30  NAME Name of R30 
+
+CH2668 CHAN YIK @ CHOW SIN KONG   IC000000198 29/12/06   IC    PN00000640             7.37                253           0.51
+CH3120 CHIN CHEW LAN **           IC000000203 29/12/06   IC    PN00000652             9.01                253           0.62
+GO149  GOH POH ENG **             IC000000227 29/12/06   IC    PN00000715            11.64                253           0.81
+GO158  GOH TEOW ENG **            IC000000029 04/12/06   IC    PN00000068             1.97                263           0.14
+GO158  GOH TEOW ENG **            IC000000030 04/12/06   IC    PN00000065             4.41                263           0.32
+GO158  GOH TEOW ENG **            IC000000031 04/12/06   IC    PN00000069             0.61                282           0.05
+GO158  GOH TEOW ENG **            IC000000074 29/12/06   IC    PN00000356            33.46                253           2.32
+GO158  GOH TEOW ENG **            IC000000075 29/12/06   IC    PN00000357            28.69                253           1.99
+GO158  GOH TEOW ENG **            IC000000076 29/12/06   IC    PN00000358            23.67                253           1.64
+GO158  GOH TEOW ENG **            IC000000077 29/12/06   IC    PN00000359            27.50                253           1.91
+GO158  GOH TEOW ENG **            IC000000078 29/12/06   IC    PN00000362            51.05                253           3.54
+GO158  GOH TEOW ENG **            IC000000139 29/12/06   IC    PN00000065            39.68                253           2.75
+GO158  GOH TEOW ENG **            IC000000140 29/12/06   IC    PN00000068            21.71                253           1.50
+GO158  GOH TEOW ENG **            IC000000141 29/12/06   IC    PN00000069             5.49                253           0.38
+GO158  GOH TEOW ENG **            IC000000228 29/12/06   IC    PN00000720            18.30                253           1.27
+GO158  GOH TEOW ENG **            IC000000229 29/12/06   IC    PN00000722            32.47                253           2.25
+GO158  GOH TEOW ENG **            IC000000230 29/12/06   IC    PN00000726            14.54                253           1.01
+GO158  GOH TEOW ENG **            IC000000349 29/12/06   IC    CD000000022            0.39                253           0.03
+GO158  GOH TEOW ENG **            IC000000366 29/12/06   IC    IC000000029            0.01                253           0.00
+GO158  GOH TEOW ENG **            IC000000367 29/12/06   IC    IC000000030            0.02                253           0.00
+LE1150 LEUNG LUM @ LEONG LUM **   IC000000147 29/12/06   IC    PN00000097             1.98                253           0.14
+LE931  LEE OON HO **              IC000000153 29/12/06   IC    PN00000103            36.02                253           2.50
+LI637  LING E MOI @ LING CHEW SW  IC000000090 29/12/06   IC    PN00000406B            5.40                253           0.37
+LI637  LING E MOI @ LING CHEW SW  IC000000241 29/12/06   IC    PN00000790             6.08                253           0.42
+LI637  LING E MOI @ LING CHEW SW  IC000000354 29/12/06   IC    CD000000045            0.76                253           0.05
+NG667  NG HOE PENG **             IC000000102 29/12/06   IC    PN00000434            12.09                253           0.84
+NG667  NG HOE PENG **             IC000000103 29/12/06   IC    PN00000435            11.20                253           0.78
+NG667  NG HOE PENG **             IC000000165 29/12/06   IC    PN00000150            12.84                253           0.89
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 5
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+TH215  THONG NYET YUEN **         IC000000343 29/12/06   IC    CD000000005            0.09                253           0.01
+
+TOTAL BY TRADER (R30) :                                                             418.45           0.00              29.04
+
+
+
+TRADER CODE R57  NAME Name of R57
+
+JE028  JEYAPALAN A/L MUTHUTHAMBY  IC000000145 29/12/06   IC    PN00000083         2,173.43                253         150.65
+JE028  JEYAPALAN A/L MUTHUTHAMBY  IC000000231 29/12/06   IC    PN00000734         1,734.62                253         120.24
+KH210  KHAW BEE CHOO ROWENA  **   IC000000146 29/12/06   IC    PN00000084            21.55                253           1.49
+KO115  KOO KAM SWEE               IC000000083 29/12/06   IC    PN00000381B           13.34                253           0.92
+KO115  KOO KAM SWEE               IC000000350 29/12/06   IC    CD000000025            0.28                253           0.02
+LE341  LEE KIM CHON **            IC000000088 29/12/06   IC    PN00000402            30.93                253           2.14
+LE341  LEE KIM CHON **            IC000000151 29/12/06   IC    PN00000101            43.48                253           3.01
+LO969  LOGARAJAH A/L SUBRAMANIAM  IC000000095 29/12/06   IC    PN00000415           189.47                253          13.13
+ME261  MELAPURTHU KOSHY THOMAS *  IC000000163 29/12/06   IC    PN00000134            11.53                253           0.80
+MO337  MOK BEE FONG               IC000000097 29/12/06   IC    PN00000420             3.25                253           0.23
+NG531  NG LUP KEONG **            IC000000257 29/12/06   IC    PN00000848            23.28                253           1.61
+PU031  PUNITHAMALAR A/P V.VELUPP  IC000000266 29/12/06   IC    PN00000887            52.08                253           3.61
+RA115  RAJALINGAM A/L RVR SINGAM  IC000000267 29/12/06   IC    PN00000890            79.74                253           5.53
+SI155  SIVALINGAM A/L VELUPPILLA  IC000000271 29/12/06   IC    PN00000903           122.72                253           8.51
+SI155  SIVALINGAM A/L VELUPPILLA  IC000000272 29/12/06   IC    PN00000905           164.33                253          11.39
+SI155  SIVALINGAM A/L VELUPPILLA  IC000000003 07/12/06   IC    CD000000004            0.05                279           0.00
+
+TOTAL BY TRADER (R57) :                                                           4,664.08           0.00             323.28
+
+
+
+TRADER CODE R59  NAME Name of R59 
+
+AD001  ADW HOLDINGS SDN BHD       IC000000341 29/12/06   IC    PF00001042           690.28                253          47.85
+CH1263 CHIN WAI FONG **           IC000000059 29/12/06   IC    PN00000307           117.74                253           8.16
+CH1263 CHIN WAI FONG **           IC000000058 29/12/06   IC    PN00000306           106.57                253           7.39
+LE047  LEOW CHEE SENG **          IC000000084 29/12/06   IC    PN00000392             1.06                253           0.07
+LI498  LIM POH HOON               IC000000155 29/12/06   IC    PN00000105            70.88                253           4.91
+NG751  NG BEOW WAH **             IC000000034 04/12/06   IC    PN00000152             0.72                282           0.06
+NG751  NG BEOW WAH **             IC000000036 04/12/06   IC    PN00000151             0.47                282           0.04
+NG751  NG BEOW WAH **             IC000000037 04/12/06   IC    PN00000154             0.31                282           0.02
+NG751  NG BEOW WAH **             IC000000038 04/12/06   IC    PN00000156             0.28                282           0.02
+NG751  NG BEOW WAH **             IC000000039 04/12/06   IC    PN00000155             0.20                282           0.02
+NG751  NG BEOW WAH **             IC000000166 29/12/06   IC    PN00000151             4.21                253           0.29
+NG751  NG BEOW WAH **             IC000000167 29/12/06   IC    PN00000152             6.45                253           0.45
+NG751  NG BEOW WAH **             IC000000168 29/12/06   IC    PN00000153             4.25                253           0.29
+NG751  NG BEOW WAH **             IC000000169 29/12/06   IC    PN00000154             2.76                253           0.19
+NG751  NG BEOW WAH **             IC000000170 29/12/06   IC    PN00000155             1.83                253           0.13
+NG751  NG BEOW WAH **             IC000000171 29/12/06   IC    PN00000156             2.48                253           0.17
+SE046  SEOW BIN YOW **            IC000000174 29/12/06   IC    PN00000167            22.28                253           1.54
+SE046  SEOW BIN YOW **            IC000000268 29/12/06   IC    PN00000895            19.38                253           1.34
+YE105  YEN WOAN WAY               IC000000338 29/12/06   IC    PN00001026            51.31                253           3.56
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 6
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+YE319  YEE KIN KEONG **           IC000000339 29/12/06   IC    PN00001029             8.22                253           0.57
+
+TOTAL BY TRADER (R59) :                                                           1,111.68           0.00              77.07
+
+
+
+TRADER CODE R79  NAME Name of R79 
+
+CH2526 CHIA SIEW WAN **           IC000000197 29/12/06   IC    PN00000638             1.80                253           0.12
+CH3011 CHONG CHEE YAH **          IC000000064 29/12/06   IC    PN00000319            21.63                253           1.50
+ES065  E SHWU YEE **              IC000000137 29/12/06   IC    PN00000051            44.72                253           3.10
+ES065  E SHWU YEE **              IC000000138 29/12/06   IC    PN00000052            53.41                253           3.70
+FA256  FARIDAH BINTI ARRIFFIN **  IC000000071 29/12/06   IC    PN00000339            14.06                253           0.97
+FO230  FONG YUET FEI @ JEFFRY FO  IC000000073 29/12/06   IC    PN00000346            10.51                253           0.73
+GA111  GAN LEE SEE                IC000000226 29/12/06   IC    PN00000713           277.00                253          19.20
+GU039  GUOY LEE LE **             IC000000143 29/12/06   IC    PN00000072             2.57                253           0.18
+LE907  LEONG KOK KEONG **         IC000000152 29/12/06   IC    PN00000102            16.16                253           1.12
+LI1320 LIM KOK CHEONG **          IC000000154 29/12/06   IC    PN00000104            17.19                253           1.19
+LI1320 LIM KOK CHEONG **          IC000000240 29/12/06   IC    PN00000789            14.54                253           1.01
+LI952  LIM AH KOW @ LIM YENG YAN  IC000000242 29/12/06   IC    PN00000797             9.36                253           0.65
+LU049  LUM LAI HENG **            IC000000161 29/12/06   IC    PN00000129            21.72                253           1.51
+MU269  MUNIANDY A/L ARUMUGAM **   IC000000098 29/12/06   IC    PN00000422            74.60                253           5.17
+MU269  MUNIANDY A/L ARUMUGAM **   IC000000099 29/12/06   IC    PN00000423             5.28                253           0.37
+MU269  MUNIANDY A/L ARUMUGAM **   IC000000100 29/12/06   IC    PN00000426           134.75                253           9.34
+MU269  MUNIANDY A/L ARUMUGAM **   IC000000254 29/12/06   IC    PN00000836           109.80                253           7.61
+MU269  MUNIANDY A/L ARUMUGAM **   IC000000255 29/12/06   IC    PN00000837           144.61                253          10.02
+MU269  MUNIANDY A/L ARUMUGAM **   IC000000351 29/12/06   IC    CD000000026            0.91                253           0.06
+NG507  NG POH YING                IC000000101 29/12/06   IC    PN00000432             6.34                253           0.44
+NG507  NG POH YING                IC000000256 29/12/06   IC    PN00000846            19.76                253           1.37
+NG535  NG ENG KIM                 IC000000164 29/12/06   IC    PN00000149            56.44                253           3.91
+TA758  TAN KIM HWA **             IC000000275 29/12/06   IC    PN00000939            22.79                253           1.58
+TA758  TAN KIM HWA **             IC000000276 29/12/06   IC    PN00000941            20.67                253           1.43
+TA758  TAN KIM HWA **             IC000000345 29/12/06   IC    CD000000015            0.02                253           0.00
+TA758  TAN KIM HWA **             IC000000346 29/12/06   IC    CD000000016            0.10                253           0.01
+TE451  TEE KAR LOON **            IC000000177 29/12/06   IC    PN00000195            10.60                253           0.73
+WO666  WONG SU HA @ WONG YOON FO  IC000000334 29/12/06   IC    PN00001018            31.87                253           2.21
+WO666  WONG SU HA @ WONG YOON FO  IC000000352 29/12/06   IC    CD000000029            0.95                253           0.07
+
+TOTAL BY TRADER (R79) :                                                           1,144.16           0.00              79.30
+
+
+
+TRADER CODE T02  NAME Name of T02
+
+CH1919 CHENG BOH LAN @ CHENG SHU  IC000000118 29/12/06   IC    PN00000009             3.65                253           0.25
+CH1919 CHENG BOH LAN @ CHENG SHU  IC000000119 29/12/06   IC    PN00000010             3.65                253           0.25
+CH2593 CHUNG TICK YIM **          IC000000061 29/12/06   IC    PN00000314            10.39                253           0.72
+CH2593 CHUNG TICK YIM **          IC000000062 29/12/06   IC    PN00000315            13.76                253           0.95
+CH2638 CHAN MEE HAR **            IC000000120 29/12/06   IC    PN00000014             8.29                253           0.57
+CH2992 CHOOI MOOI CHENG @ CHOOI   IC000000042 04/12/06   IC    PN00000016             2.55                263           0.18
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 7
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+CH2992 CHOOI MOOI CHENG @ CHOOI   IC000000063 29/12/06   IC    PN00000317            15.80                253           1.10
+CH2992 CHOOI MOOI CHENG @ CHOOI   IC000000121 29/12/06   IC    PN00000016            22.96                253           1.59
+CH2992 CHOOI MOOI CHENG @ CHOOI   IC000000122 29/12/06   IC    PN00000017            12.53                253           0.87
+CH2992 CHOOI MOOI CHENG @ CHOOI   IC000000201 29/12/06   IC    PN00000643             7.58                253           0.53
+CH2992 CHOOI MOOI CHENG @ CHOOI   IC000000202 29/12/06   IC    PN00000645            17.12                253           1.19
+CH2992 CHOOI MOOI CHENG @ CHOOI   IC000000368 29/12/06   IC    IC000000042            0.01                253           0.00
+CH3261 CHEN CHOW FUN **           IC000000128 29/12/06   IC    PN00000038            20.48                253           1.42
+FA365  FAM HOI YOON **            IC000000072 29/12/06   IC    PN00000342             2.80                253           0.19
+HO208  HOW KENG ENG @ HOW CHING   IC000000081 29/12/06   IC    PN00000367            15.95                253           1.11
+HO208  HOW KENG ENG @ HOW CHING   IC000000144 29/12/06   IC    PN00000080            20.54                253           1.42
+KH300  KOH LAI FUN **             IC000000233 29/12/06   IC    PN00000738            14.37                253           1.00
+LI1168 LIM FAY MENG **            IC000000089 29/12/06   IC    PN00000404            26.71                253           1.85
+LO389  LOW KOK CHOONG **          IC000000156 29/12/06   IC    PN00000110            92.01                253           6.38
+LO389  LOW KOK CHOONG **          IC000000246 29/12/06   IC    PN00000810            25.86                253           1.79
+LO457  LOKE SHU YAN **            IC000000046 04/12/06   IC    PN00000115             6.00                263           0.43
+LO457  LOKE SHU YAN **            IC000000157 29/12/06   IC    PN00000113            31.30                253           2.17
+LO457  LOKE SHU YAN **            IC000000158 29/12/06   IC    PN00000114            96.40                253           6.68
+LO457  LOKE SHU YAN **            IC000000159 29/12/06   IC    PN00000115            54.03                253           3.75
+LO457  LOKE SHU YAN **            IC000000160 29/12/06   IC    PN00000116            31.36                253           2.17
+LO457  LOKE SHU YAN **            IC000000369 29/12/06   IC    IC000000046            0.03                253           0.00
+LO482  LOW YONG HWANG **          IC000000247 29/12/06   IC    PN00000815            19.56                253           1.36
+LO482  LOW YONG HWANG **          IC000000248 29/12/06   IC    PN00000816            10.79                253           0.75
+LO507  LOH KEW @ LAW KON YEW      IC000000093 29/12/06   IC    PN00000413            26.48                253           1.84
+LO507  LOH KEW @ LAW KON YEW      IC000000094 29/12/06   IC    PN00000414            31.34                253           2.17
+LO879  LOW MAN YEE @ ESTHER LOW   IC000000249 29/12/06   IC    PN00000818            20.47                253           1.42
+SI665  SIEW AH MENG **            IC000000117 29/12/06   IC    PN00000478            15.16                253           1.05
+WO555  WONG GEK KEONG **          IC000000280 29/12/06   IC    PN00000957             0.11                253           0.01
+WO555  WONG GEK KEONG **          IC000000281 29/12/06   IC    PN00000958             0.11                253           0.01
+WO555  WONG GEK KEONG **          IC000000282 29/12/06   IC    PN00000959             0.26                253           0.02
+WO555  WONG GEK KEONG **          IC000000283 29/12/06   IC    PN00000960             0.11                253           0.01
+WO555  WONG GEK KEONG **          IC000000284 29/12/06   IC    PN00000961             0.10                253           0.01
+WO555  WONG GEK KEONG **          IC000000285 29/12/06   IC    PN00000962             0.13                253           0.01
+WO555  WONG GEK KEONG **          IC000000286 29/12/06   IC    PN00000963             0.32                253           0.02
+WO555  WONG GEK KEONG **          IC000000287 29/12/06   IC    PN00000964             0.41                253           0.03
+WO555  WONG GEK KEONG **          IC000000288 29/12/06   IC    PN00000965             0.54                253           0.04
+WO555  WONG GEK KEONG **          IC000000289 29/12/06   IC    PN00000966             0.21                253           0.01
+WO555  WONG GEK KEONG **          IC000000290 29/12/06   IC    PN00000967             0.53                253           0.04
+WO555  WONG GEK KEONG **          IC000000291 29/12/06   IC    PN00000968             0.25                253           0.02
+WO555  WONG GEK KEONG **          IC000000292 29/12/06   IC    PN00000969             1.12                253           0.08
+WO555  WONG GEK KEONG **          IC000000293 29/12/06   IC    PN00000970             0.22                253           0.02
+WO555  WONG GEK KEONG **          IC000000294 29/12/06   IC    PN00000971             0.22                253           0.02
+WO555  WONG GEK KEONG **          IC000000295 29/12/06   IC    PN00000972             0.15                253           0.01
+WO555  WONG GEK KEONG **          IC000000296 29/12/06   IC    PN00000975             0.16                253           0.01
+WO555  WONG GEK KEONG **          IC000000297 29/12/06   IC    PN00000976             0.16                253           0.01
+WO555  WONG GEK KEONG **          IC000000298 29/12/06   IC    PN00000977             0.17                253           0.01
+WO555  WONG GEK KEONG **          IC000000299 29/12/06   IC    PN00000978             0.12                253           0.01
+WO555  WONG GEK KEONG **          IC000000300 29/12/06   IC    PN00000979             0.16                253           0.01
+WO555  WONG GEK KEONG **          IC000000301 29/12/06   IC    PN00000980             0.16                253           0.01
+WO555  WONG GEK KEONG **          IC000000302 29/12/06   IC    PN00000981             0.16                253           0.01
+WO555  WONG GEK KEONG **          IC000000303 29/12/06   IC    PN00000982             0.16                253           0.01
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 8
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+WO555  WONG GEK KEONG **          IC000000304 29/12/06   IC    PN00000983             0.16                253           0.01
+WO555  WONG GEK KEONG **          IC000000305 29/12/06   IC    PN00000984             0.13                253           0.01
+WO555  WONG GEK KEONG **          IC000000306 29/12/06   IC    PN00000986             0.11                253           0.01
+WO555  WONG GEK KEONG **          IC000000307 29/12/06   IC    PN00000987             1.24                253           0.09
+WO555  WONG GEK KEONG **          IC000000308 29/12/06   IC    PN00000988             0.37                253           0.03
+WO555  WONG GEK KEONG **          IC000000309 29/12/06   IC    PN00000989             0.20                253           0.01
+WO555  WONG GEK KEONG **          IC000000310 29/12/06   IC    PN00000990             0.36                253           0.02
+WO555  WONG GEK KEONG **          IC000000311 29/12/06   IC    PN00000991             0.31                253           0.02
+WO555  WONG GEK KEONG **          IC000000312 29/12/06   IC    PN00000992             0.51                253           0.04
+WO555  WONG GEK KEONG **          IC000000313 29/12/06   IC    PN00000993             0.01                253           0.00
+WO555  WONG GEK KEONG **          IC000000314 29/12/06   IC    PN00000994             0.15                253           0.01
+WO555  WONG GEK KEONG **          IC000000315 29/12/06   IC    PN00000995             0.17                253           0.01
+WO555  WONG GEK KEONG **          IC000000316 29/12/06   IC    PN00000997             7.35                253           0.51
+WO555  WONG GEK KEONG **          IC000000317 29/12/06   IC    PN00000998             0.23                253           0.02
+WO555  WONG GEK KEONG **          IC000000318 29/12/06   IC    PN00000999             0.10                253           0.01
+WO555  WONG GEK KEONG **          IC000000319 29/12/06   IC    PN00001001             0.16                253           0.01
+WO555  WONG GEK KEONG **          IC000000320 29/12/06   IC    PN00001002             0.11                253           0.01
+WO555  WONG GEK KEONG **          IC000000321 29/12/06   IC    PN00001003             0.57                253           0.04
+WO555  WONG GEK KEONG **          IC000000322 29/12/06   IC    PN00001004             0.60                253           0.04
+WO555  WONG GEK KEONG **          IC000000323 29/12/06   IC    PN00001006             0.39                253           0.03
+WO555  WONG GEK KEONG **          IC000000324 29/12/06   IC    PN00001007             0.11                253           0.01
+WO555  WONG GEK KEONG **          IC000000325 29/12/06   IC    PN00001008             0.62                253           0.04
+WO555  WONG GEK KEONG **          IC000000326 29/12/06   IC    PN00001009             0.31                253           0.02
+WO555  WONG GEK KEONG **          IC000000327 29/12/06   IC    PN00001010             3.38                253           0.23
+WO555  WONG GEK KEONG **          IC000000328 29/12/06   IC    PN00001011             0.31                253           0.02
+WO555  WONG GEK KEONG **          IC000000329 29/12/06   IC    PN00001012             0.32                253           0.02
+WO555  WONG GEK KEONG **          IC000000330 29/12/06   IC    PN00001013             1.10                253           0.08
+WO555  WONG GEK KEONG **          IC000000331 29/12/06   IC    PN00001014             0.33                253           0.02
+WO555  WONG GEK KEONG **          IC000000332 29/12/06   IC    PN00001015             0.14                253           0.01
+WO555  WONG GEK KEONG **          IC000000333 29/12/06   IC    PN00001016             1.77                253           0.12
+WO681  WO TING TAK **             IC000000179 29/12/06   IC    PN00000279            13.04                253           0.90
+WO681  WO TING TAK **             IC000000189 29/12/06   IC    PN00000600             3.75                253           0.26
+WO681  WO TING TAK **             IC000000190 29/12/06   IC    PN00000601            30.19                253           2.09
+WO681  WO TING TAK **             IC000000191 29/12/06   IC    PN00000602            15.66                253           1.09
+WO681  WO TING TAK **             IC000000335 29/12/06   IC    PN00001020            29.79                253           2.06
+WO681  WO TING TAK **             IC000000336 29/12/06   IC    PN00001022            27.27                253           1.89
+WO681  WO TING TAK **             IC000000337 29/12/06   IC    PN00001024            50.60                253           3.51
+
+TOTAL BY TRADER (T02) :                                                             877.89           0.00              60.89
+
+
+
+TRADER CODE T06  NAME Name of T06 
+
+LY020  LYE SIYUAN **              IC000000162 29/12/06   IC    PN00000130           151.53                253          10.50
+LY020  LYE SIYUAN **              IC000000250 29/12/06   IC    PN00000821            68.18                253           4.73
+LY020  LYE SIYUAN **              IC000000251 29/12/06   IC    PN00000823            90.35                253           6.26
+LY020  LYE SIYUAN **              IC000000252 29/12/06   IC    PN00000824            51.82                253           3.59
+
+TOTAL BY TRADER (T06) :                                                             361.88           0.00              25.08
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
+bms4123r                                            DEMO SECURITIES SDN. BHD.                             DATE:17/10/07 PAGE 9
+USER: demo23                  CLIENT OUTSTANDING JOURNAL BY TRADER WITH JOURNAL DATE AS AT 20/09/07       TIME: 15:15:17
+                                               FOR BRANCH : 1 KUALA LUMPUR BRANCH
+
+------------------------------------------------------------------------------------------------------------------------------------
+CLIENT                            JOURNAL     JOURNAL  JOURNAL REFERENCE             DEBIT         CREDIT DAY     ACCUMULATE
+NO.    NAME                       NUMBER      DATE      CODE   NUMBER                 NOTE           NOTE O/S       INTEREST
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+TRADER CODE T10  NAME Name of T10
+
+LE093  LEONG WENG YIP ***         IC000000085 29/12/06   IC    PN00000394B           63.17                253           4.38
+LE093  LEONG WENG YIP ***         IC000000086 29/12/06   IC    PN00000396            51.79                253           3.59
+LE093  LEONG WENG YIP ***         IC000000087 29/12/06   IC    PN00000400             5.68                253           0.39
+LE093  LEONG WENG YIP ***         IC000000235 29/12/06   IC    PN00000757            37.32                253           2.59
+LE093  LEONG WENG YIP ***         IC000000236 29/12/06   IC    PN00000758            41.73                253           2.89
+LE093  LEONG WENG YIP ***         IC000000237 29/12/06   IC    PN00000759B           27.99                253           1.94
+LE093  LEONG WENG YIP ***         IC000000238 29/12/06   IC    PN00000765B          102.06                253           7.07
+LE093  LEONG WENG YIP ***         IC000000353 29/12/06   IC    CD000000032            3.62                253           0.25
+
+TOTAL BY TRADER (T10) :                                                             333.36           0.00              23.10
+
+
+
+TRADER CODE T33  NAME Name of T33
+
+AB619  ABDUL MAJID BIN MOHAMED H  IC000000184 29/12/06   IC    PF00000298           323.31                253          22.41
+AB619  ABDUL MAJID BIN MOHAMED H  IC000000192 29/12/06   IC    PF00000610        15,161.26                253       1,050.90
+AB619  ABDUL MAJID BIN MOHAMED H  CN000000412 19/09/07   CN    A123                                100.00   1           0.00
+AB619  ABDUL MAJID BIN MOHAMED H  IC000000415 20/09/07   IC    PF00000610       159,496.48                              0.00
+AB731  AB MANAP BIN GANI **       IC000000056 29/12/06   IC    PN00000301            29.84                253           2.07
+MO1424 MOHD ROSLI BIN SULAIMAN *  IC000000096 29/12/06   IC    PN00000419            10.83                253           0.75
+MO1424 MOHD ROSLI BIN SULAIMAN *  IC000000253 29/12/06   IC    PN00000828            18.68                253           1.29
+NO948  NOR ASHIKIN BINTI MOHAMED  IC000000263 29/12/06   IC    PN00000866            17.96                253           1.24
+NU131  NURANI BINTI ABDULLAH      IC000000264 29/12/06   IC    PN00000870            40.26                253           2.79
+SE176  SELVARANI A/P VAITHILINGA  IC000000116 29/12/06   IC    PN00000467             5.41                253           0.37
+SE176  SELVARANI A/P VAITHILINGA  IC000000269 29/12/06   IC    PN00000896             3.73                253           0.26
+SE176  SELVARANI A/P VAITHILINGA  IC000000270 29/12/06   IC    PN00000898             8.22                253           0.57
+ZA532  ZAFRULLAH BIN SHAMSUDIN    IC000000182 29/12/06   IC    PN00000288            47.25                253           3.28
+ZA532  ZAFRULLAH BIN SHAMSUDIN    IC000000183 29/12/06   IC    PN00000289            21.97                253           1.52
+
+TOTAL BY TRADER (T33) :                                                         175,185.20         100.00           1,087.45
+
+
+
+
+GRAND TOTAL                                                                     199,665.04         100.00           1,088.97
+
+
+
+
+
+
+
+
+
+
+ NOTE : THIS REPORT CAN BE SORTED BY TRADER/CLIENT TYPE
+------------------------------------------------------------------------------------------------------------------------------------
+                                                           END OF REPORT
+
+
+
+
