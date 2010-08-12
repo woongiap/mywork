@@ -1,15 +1,12 @@
 #include <stdio.h>
 
-int lib_do(int);
-
-int main(int argc, char **argv)
-{
-  int age, year = 1977;
-
-  scanf("%d", &year);
-  age = 2010 - year;
-  printf("my age is %d\n", age);
-
-  fprintf(stdout, "lib_do int is %d\n", lib_do(5));
+int a (int* i) {
+  int abc = *i;
+  return abc;
+}
+int main(void) {
+  printf("hello number is %d\n", 2008);
+  int* pi = 0;
+  int i = a(pi);
   return 0;
 }
