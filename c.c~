@@ -1,3 +1,0 @@
-int lib_do(int i) {
-  return 5;
-}
