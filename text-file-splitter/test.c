@@ -20,7 +20,7 @@ int main(void)
 {
 #ifdef __WINNT__
 	printf("__WINNT__\n");
-#elif
+#else
 	printf("NO __WINNT__");
 #endif
 
