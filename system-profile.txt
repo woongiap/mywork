@@ -1,0 +1,1381 @@
+# Events: 6K cycles
+#
+# Overhead          Command                Shared Object                               Symbol
+# ........  ...............  ...........................  ...................................
+#
+    20.57%      kworker/1:2  [kernel.kallsyms]            [k] delay_tsc
+                |
+                --- delay_tsc
+                   |          
+                   |--58.58%-- __const_udelay
+                   |          |          
+                   |          |--65.76%-- set_clock
+                   |          |          |          
+                   |          |          |--54.59%-- sclhi
+                   |          |          |          |          
+                   |          |          |          |--78.84%-- i2c_outb
+                   |          |          |          |          |          
+                   |          |          |          |          |--60.80%-- try_address
+                   |          |          |          |          |          bit_xfer
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--77.41%-- i2c_transfer
+                   |          |          |          |          |          |          |          
+                   |          |          |          |          |          |          |--54.01%-- intel_sdvo_read_byte
+                   |          |          |          |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          |          
+                   |          |          |          |          |          |          |--27.23%-- intel_sdvo_master_xfer
+                   |          |          |          |          |          |          |          i2c_transfer
+                   |          |          |          |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          |          |          |          drm_get_edid
+                   |          |          |          |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          |          
+                   |          |          |          |          |          |           --18.76%-- intel_sdvo_write_byte
+                   |          |          |          |          |          |                     |          
+                   |          |          |          |          |          |                     |--68.97%-- intel_sdvo_write_cmd
+                   |          |          |          |          |          |                     |          intel_sdvo_detect
+                   |          |          |          |          |          |                     |          output_poll_execute
+                   |          |          |          |          |          |                     |          process_one_work
+                   |          |          |          |          |          |                     |          worker_thread
+                   |          |          |          |          |          |                     |          kthread
+                   |          |          |          |          |          |                     |          kernel_thread_helper
+                   |          |          |          |          |          |                     |          
+                   |          |          |          |          |          |                      --31.03%-- intel_sdvo_master_xfer
+                   |          |          |          |          |          |                                i2c_transfer
+                   |          |          |          |          |          |                                drm_do_probe_ddc_edid
+                   |          |          |          |          |          |                                drm_get_edid
+                   |          |          |          |          |          |                                intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |          |                                intel_sdvo_detect
+                   |          |          |          |          |          |                                output_poll_execute
+                   |          |          |          |          |          |                                process_one_work
+                   |          |          |          |          |          |                                worker_thread
+                   |          |          |          |          |          |                                kthread
+                   |          |          |          |          |          |                                kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |           --22.59%-- intel_sdvo_master_xfer
+                   |          |          |          |          |                     i2c_transfer
+                   |          |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |          |                     drm_get_edid
+                   |          |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |          |                     output_poll_execute
+                   |          |          |          |          |                     process_one_work
+                   |          |          |          |          |                     worker_thread
+                   |          |          |          |          |                     kthread
+                   |          |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --39.20%-- bit_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     |          
+                   |          |          |          |                     |--50.45%-- intel_sdvo_write_byte
+                   |          |          |          |                     |          |          
+                   |          |          |          |                     |          |--55.44%-- intel_sdvo_master_xfer
+                   |          |          |          |                     |          |          i2c_transfer
+                   |          |          |          |                     |          |          drm_do_probe_ddc_edid
+                   |          |          |          |                     |          |          drm_get_edid
+                   |          |          |          |                     |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     |          |          intel_sdvo_detect
+                   |          |          |          |                     |          |          output_poll_execute
+                   |          |          |          |                     |          |          process_one_work
+                   |          |          |          |                     |          |          worker_thread
+                   |          |          |          |                     |          |          kthread
+                   |          |          |          |                     |          |          kernel_thread_helper
+                   |          |          |          |                     |          |          
+                   |          |          |          |                     |           --44.56%-- intel_sdvo_write_cmd
+                   |          |          |          |                     |                     intel_sdvo_detect
+                   |          |          |          |                     |                     output_poll_execute
+                   |          |          |          |                     |                     process_one_work
+                   |          |          |          |                     |                     worker_thread
+                   |          |          |          |                     |                     kthread
+                   |          |          |          |                     |                     kernel_thread_helper
+                   |          |          |          |                     |          
+                   |          |          |          |                     |--30.86%-- intel_sdvo_read_byte
+                   |          |          |          |                     |          intel_sdvo_read_response
+                   |          |          |          |                     |          intel_sdvo_detect
+                   |          |          |          |                     |          output_poll_execute
+                   |          |          |          |                     |          process_one_work
+                   |          |          |          |                     |          worker_thread
+                   |          |          |          |                     |          kthread
+                   |          |          |          |                     |          kernel_thread_helper
+                   |          |          |          |                     |          
+                   |          |          |          |                      --18.68%-- intel_sdvo_master_xfer
+                   |          |          |          |                                i2c_transfer
+                   |          |          |          |                                drm_do_probe_ddc_edid
+                   |          |          |          |                                drm_get_edid
+                   |          |          |          |                                intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                                intel_sdvo_detect
+                   |          |          |          |                                output_poll_execute
+                   |          |          |          |                                process_one_work
+                   |          |          |          |                                worker_thread
+                   |          |          |          |                                kthread
+                   |          |          |          |                                kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |          |--9.17%-- bit_xfer
+                   |          |          |          |          i2c_transfer
+                   |          |          |          |          |          
+                   |          |          |          |          |--76.39%-- intel_sdvo_read_byte
+                   |          |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          process_one_work
+                   |          |          |          |          |          worker_thread
+                   |          |          |          |          |          kthread
+                   |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --23.61%-- intel_sdvo_master_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |                     drm_get_edid
+                   |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |                     output_poll_execute
+                   |          |          |          |                     process_one_work
+                   |          |          |          |                     worker_thread
+                   |          |          |          |                     kthread
+                   |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |          |--6.44%-- i2c_stop
+                   |          |          |          |          |          
+                   |          |          |          |          |--66.37%-- bit_xfer
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--83.11%-- i2c_transfer
+                   |          |          |          |          |          |          intel_sdvo_read_byte
+                   |          |          |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |           --16.89%-- intel_sdvo_master_xfer
+                   |          |          |          |          |                     i2c_transfer
+                   |          |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |          |                     drm_get_edid
+                   |          |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |          |                     output_poll_execute
+                   |          |          |          |          |                     process_one_work
+                   |          |          |          |          |                     worker_thread
+                   |          |          |          |          |                     kthread
+                   |          |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --33.63%-- try_address
+                   |          |          |          |                     bit_xfer
+                   |          |          |          |                     intel_sdvo_master_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |                     drm_get_edid
+                   |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |                     output_poll_execute
+                   |          |          |          |                     process_one_work
+                   |          |          |          |                     worker_thread
+                   |          |          |          |                     kthread
+                   |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |          |--2.80%-- acknak
+                   |          |          |          |          bit_xfer
+                   |          |          |          |          i2c_transfer
+                   |          |          |          |          intel_sdvo_read_byte
+                   |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          output_poll_execute
+                   |          |          |          |          process_one_work
+                   |          |          |          |          worker_thread
+                   |          |          |          |          kthread
+                   |          |          |          |          kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --2.74%-- i2c_repstart
+                   |          |          |                     bit_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     |          
+                   |          |          |                     |--73.68%-- intel_sdvo_read_byte
+                   |          |          |                     |          intel_sdvo_read_response
+                   |          |          |                     |          intel_sdvo_detect
+                   |          |          |                     |          output_poll_execute
+                   |          |          |                     |          process_one_work
+                   |          |          |                     |          worker_thread
+                   |          |          |                     |          kthread
+                   |          |          |                     |          kernel_thread_helper
+                   |          |          |                     |          
+                   |          |          |                      --26.32%-- intel_sdvo_master_xfer
+                   |          |          |                                i2c_transfer
+                   |          |          |                                drm_do_probe_ddc_edid
+                   |          |          |                                drm_get_edid
+                   |          |          |                                intel_sdvo_hdmi_sink_detect
+                   |          |          |                                intel_sdvo_detect
+                   |          |          |                                output_poll_execute
+                   |          |          |                                process_one_work
+                   |          |          |                                worker_thread
+                   |          |          |                                kthread
+                   |          |          |                                kernel_thread_helper
+                   |          |          |          
+                   |          |          |--41.61%-- i2c_outb
+                   |          |          |          |          
+                   |          |          |          |--60.29%-- try_address
+                   |          |          |          |          bit_xfer
+                   |          |          |          |          |          
+                   |          |          |          |          |--73.29%-- i2c_transfer
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--60.15%-- intel_sdvo_read_byte
+                   |          |          |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--21.43%-- intel_sdvo_master_xfer
+                   |          |          |          |          |          |          i2c_transfer
+                   |          |          |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          |          |          drm_get_edid
+                   |          |          |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |           --18.43%-- intel_sdvo_write_byte
+                   |          |          |          |          |                     |          
+                   |          |          |          |          |                     |--53.62%-- intel_sdvo_write_cmd
+                   |          |          |          |          |                     |          intel_sdvo_detect
+                   |          |          |          |          |                     |          output_poll_execute
+                   |          |          |          |          |                     |          process_one_work
+                   |          |          |          |          |                     |          worker_thread
+                   |          |          |          |          |                     |          kthread
+                   |          |          |          |          |                     |          kernel_thread_helper
+                   |          |          |          |          |                     |          
+                   |          |          |          |          |                      --46.38%-- intel_sdvo_master_xfer
+                   |          |          |          |          |                                i2c_transfer
+                   |          |          |          |          |                                drm_do_probe_ddc_edid
+                   |          |          |          |          |                                drm_get_edid
+                   |          |          |          |          |                                intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |                                intel_sdvo_detect
+                   |          |          |          |          |                                output_poll_execute
+                   |          |          |          |          |                                process_one_work
+                   |          |          |          |          |                                worker_thread
+                   |          |          |          |          |                                kthread
+                   |          |          |          |          |                                kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --26.71%-- intel_sdvo_master_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |                     drm_get_edid
+                   |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |                     output_poll_execute
+                   |          |          |          |                     process_one_work
+                   |          |          |          |                     worker_thread
+                   |          |          |          |                     kthread
+                   |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --39.71%-- bit_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     |          
+                   |          |          |                     |--44.17%-- intel_sdvo_write_byte
+                   |          |          |                     |          |          
+                   |          |          |                     |          |--62.27%-- intel_sdvo_write_cmd
+                   |          |          |                     |          |          intel_sdvo_detect
+                   |          |          |                     |          |          output_poll_execute
+                   |          |          |                     |          |          process_one_work
+                   |          |          |                     |          |          worker_thread
+                   |          |          |                     |          |          kthread
+                   |          |          |                     |          |          kernel_thread_helper
+                   |          |          |                     |          |          
+                   |          |          |                     |           --37.73%-- intel_sdvo_master_xfer
+                   |          |          |                     |                     i2c_transfer
+                   |          |          |                     |                     drm_do_probe_ddc_edid
+                   |          |          |                     |                     drm_get_edid
+                   |          |          |                     |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |                     |                     intel_sdvo_detect
+                   |          |          |                     |                     output_poll_execute
+                   |          |          |                     |                     process_one_work
+                   |          |          |                     |                     worker_thread
+                   |          |          |                     |                     kthread
+                   |          |          |                     |                     kernel_thread_helper
+                   |          |          |                     |          
+                   |          |          |                     |--28.61%-- intel_sdvo_master_xfer
+                   |          |          |                     |          i2c_transfer
+                   |          |          |                     |          drm_do_probe_ddc_edid
+                   |          |          |                     |          drm_get_edid
+                   |          |          |                     |          intel_sdvo_hdmi_sink_detect
+                   |          |          |                     |          intel_sdvo_detect
+                   |          |          |                     |          output_poll_execute
+                   |          |          |                     |          process_one_work
+                   |          |          |                     |          worker_thread
+                   |          |          |                     |          kthread
+                   |          |          |                     |          kernel_thread_helper
+                   |          |          |                     |          
+                   |          |          |                      --27.22%-- intel_sdvo_read_byte
+                   |          |          |                                intel_sdvo_read_response
+                   |          |          |                                intel_sdvo_detect
+                   |          |          |                                output_poll_execute
+                   |          |          |                                process_one_work
+                   |          |          |                                worker_thread
+                   |          |          |                                kthread
+                   |          |          |                                kernel_thread_helper
+                   |          |          |          
+                   |          |          |--2.33%-- bit_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          |          
+                   |          |          |          |--83.09%-- intel_sdvo_read_byte
+                   |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          output_poll_execute
+                   |          |          |          |          process_one_work
+                   |          |          |          |          worker_thread
+                   |          |          |          |          kthread
+                   |          |          |          |          kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --16.91%-- intel_sdvo_master_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |                     drm_get_edid
+                   |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |                     intel_sdvo_detect
+                   |          |          |                     output_poll_execute
+                   |          |          |                     process_one_work
+                   |          |          |                     worker_thread
+                   |          |          |                     kthread
+                   |          |          |                     kernel_thread_helper
+                   |          |          |          
+                   |          |          |--0.72%-- i2c_start
+                   |          |          |          bit_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          |          
+                   |          |          |          |--55.05%-- intel_sdvo_master_xfer
+                   |          |          |          |          i2c_transfer
+                   |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          drm_get_edid
+                   |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          output_poll_execute
+                   |          |          |          |          process_one_work
+                   |          |          |          |          worker_thread
+                   |          |          |          |          kthread
+                   |          |          |          |          kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --44.95%-- intel_sdvo_read_byte
+                   |          |          |                     intel_sdvo_read_response
+                   |          |          |                     intel_sdvo_detect
+                   |          |          |                     output_poll_execute
+                   |          |          |                     process_one_work
+                   |          |          |                     worker_thread
+                   |          |          |                     kthread
+                   |          |          |                     kernel_thread_helper
+                   |          |           --0.76%-- [...]
+                   |          |          
+                   |          |--33.31%-- set_data
+                   |          |          |          
+                   |          |          |--79.58%-- i2c_outb
+                   |          |          |          |          
+                   |          |          |          |--64.98%-- try_address
+                   |          |          |          |          bit_xfer
+                   |          |          |          |          |          
+                   |          |          |          |          |--75.92%-- i2c_transfer
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--52.45%-- intel_sdvo_read_byte
+                   |          |          |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--33.67%-- intel_sdvo_master_xfer
+                   |          |          |          |          |          |          i2c_transfer
+                   |          |          |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          |          |          drm_get_edid
+                   |          |          |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |           --13.88%-- intel_sdvo_write_byte
+                   |          |          |          |          |                     |          
+                   |          |          |          |          |                     |--71.16%-- intel_sdvo_master_xfer
+                   |          |          |          |          |                     |          i2c_transfer
+                   |          |          |          |          |                     |          drm_do_probe_ddc_edid
+                   |          |          |          |          |                     |          drm_get_edid
+                   |          |          |          |          |                     |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |                     |          intel_sdvo_detect
+                   |          |          |          |          |                     |          output_poll_execute
+                   |          |          |          |          |                     |          process_one_work
+                   |          |          |          |          |                     |          worker_thread
+                   |          |          |          |          |                     |          kthread
+                   |          |          |          |          |                     |          kernel_thread_helper
+                   |          |          |          |          |                     |          
+                   |          |          |          |          |                      --28.84%-- intel_sdvo_write_cmd
+                   |          |          |          |          |                                intel_sdvo_detect
+                   |          |          |          |          |                                output_poll_execute
+                   |          |          |          |          |                                process_one_work
+                   |          |          |          |          |                                worker_thread
+                   |          |          |          |          |                                kthread
+                   |          |          |          |          |                                kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --24.08%-- intel_sdvo_master_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |                     drm_get_edid
+                   |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |                     output_poll_execute
+                   |          |          |          |                     process_one_work
+                   |          |          |          |                     worker_thread
+                   |          |          |          |                     kthread
+                   |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --35.02%-- bit_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     |          
+                   |          |          |                     |--39.73%-- intel_sdvo_read_byte
+                   |          |          |                     |          intel_sdvo_read_response
+                   |          |          |                     |          intel_sdvo_detect
+                   |          |          |                     |          output_poll_execute
+                   |          |          |                     |          process_one_work
+                   |          |          |                     |          worker_thread
+                   |          |          |                     |          kthread
+                   |          |          |                     |          kernel_thread_helper
+                   |          |          |                     |          
+                   |          |          |                     |--35.15%-- intel_sdvo_write_byte
+                   |          |          |                     |          |          
+                   |          |          |                     |          |--55.49%-- intel_sdvo_master_xfer
+                   |          |          |                     |          |          i2c_transfer
+                   |          |          |                     |          |          drm_do_probe_ddc_edid
+                   |          |          |                     |          |          drm_get_edid
+                   |          |          |                     |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |                     |          |          intel_sdvo_detect
+                   |          |          |                     |          |          output_poll_execute
+                   |          |          |                     |          |          process_one_work
+                   |          |          |                     |          |          worker_thread
+                   |          |          |                     |          |          kthread
+                   |          |          |                     |          |          kernel_thread_helper
+                   |          |          |                     |          |          
+                   |          |          |                     |           --44.51%-- intel_sdvo_write_cmd
+                   |          |          |                     |                     intel_sdvo_detect
+                   |          |          |                     |                     output_poll_execute
+                   |          |          |                     |                     process_one_work
+                   |          |          |                     |                     worker_thread
+                   |          |          |                     |                     kthread
+                   |          |          |                     |                     kernel_thread_helper
+                   |          |          |                     |          
+                   |          |          |                      --25.11%-- intel_sdvo_master_xfer
+                   |          |          |                                i2c_transfer
+                   |          |          |                                drm_do_probe_ddc_edid
+                   |          |          |                                drm_get_edid
+                   |          |          |                                intel_sdvo_hdmi_sink_detect
+                   |          |          |                                intel_sdvo_detect
+                   |          |          |                                output_poll_execute
+                   |          |          |                                process_one_work
+                   |          |          |                                worker_thread
+                   |          |          |                                kthread
+                   |          |          |                                kernel_thread_helper
+                   |          |          |          
+                   |          |          |--8.40%-- i2c_stop
+                   |          |          |          |          
+                   |          |          |          |--81.46%-- bit_xfer
+                   |          |          |          |          |          
+                   |          |          |          |          |--77.24%-- i2c_transfer
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--56.12%-- intel_sdvo_write_byte
+                   |          |          |          |          |          |          |          
+                   |          |          |          |          |          |          |--78.63%-- intel_sdvo_master_xfer
+                   |          |          |          |          |          |          |          i2c_transfer
+                   |          |          |          |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          |          |          |          drm_get_edid
+                   |          |          |          |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          |          
+                   |          |          |          |          |          |           --21.37%-- intel_sdvo_write_cmd
+                   |          |          |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |          |          |                     output_poll_execute
+                   |          |          |          |          |          |                     process_one_work
+                   |          |          |          |          |          |                     worker_thread
+                   |          |          |          |          |          |                     kthread
+                   |          |          |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |           --43.88%-- intel_sdvo_read_byte
+                   |          |          |          |          |                     intel_sdvo_read_response
+                   |          |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |          |                     output_poll_execute
+                   |          |          |          |          |                     process_one_work
+                   |          |          |          |          |                     worker_thread
+                   |          |          |          |          |                     kthread
+                   |          |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --22.76%-- intel_sdvo_master_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |                     drm_get_edid
+                   |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |                     output_poll_execute
+                   |          |          |          |                     process_one_work
+                   |          |          |          |                     worker_thread
+                   |          |          |          |                     kthread
+                   |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --18.54%-- try_address
+                   |          |          |                     bit_xfer
+                   |          |          |                     intel_sdvo_master_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |                     drm_get_edid
+                   |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |                     intel_sdvo_detect
+                   |          |          |                     output_poll_execute
+                   |          |          |                     process_one_work
+                   |          |          |                     worker_thread
+                   |          |          |                     kthread
+                   |          |          |                     kernel_thread_helper
+                   |          |          |          
+                   |          |          |--5.89%-- i2c_start
+                   |          |          |          |          
+                   |          |          |          |--86.80%-- bit_xfer
+                   |          |          |          |          |          
+                   |          |          |          |          |--84.79%-- i2c_transfer
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--52.45%-- intel_sdvo_read_byte
+                   |          |          |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--35.83%-- intel_sdvo_master_xfer
+                   |          |          |          |          |          |          i2c_transfer
+                   |          |          |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          |          |          drm_get_edid
+                   |          |          |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |           --11.72%-- intel_sdvo_write_byte
+                   |          |          |          |          |                     intel_sdvo_write_cmd
+                   |          |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |          |                     output_poll_execute
+                   |          |          |          |          |                     process_one_work
+                   |          |          |          |          |                     worker_thread
+                   |          |          |          |          |                     kthread
+                   |          |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --15.21%-- intel_sdvo_master_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |                     drm_get_edid
+                   |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |                     output_poll_execute
+                   |          |          |          |                     process_one_work
+                   |          |          |          |                     worker_thread
+                   |          |          |          |                     kthread
+                   |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --13.20%-- try_address
+                   |          |          |                     bit_xfer
+                   |          |          |                     intel_sdvo_master_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |                     drm_get_edid
+                   |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |                     intel_sdvo_detect
+                   |          |          |                     output_poll_execute
+                   |          |          |                     process_one_work
+                   |          |          |                     worker_thread
+                   |          |          |                     kthread
+                   |          |          |                     kernel_thread_helper
+                   |          |          |          
+                   |          |          |--3.80%-- i2c_repstart
+                   |          |          |          bit_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          |          
+                   |          |          |          |--79.53%-- intel_sdvo_read_byte
+                   |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          output_poll_execute
+                   |          |          |          |          process_one_work
+                   |          |          |          |          worker_thread
+                   |          |          |          |          kthread
+                   |          |          |          |          kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --20.47%-- intel_sdvo_master_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |                     drm_get_edid
+                   |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |                     intel_sdvo_detect
+                   |          |          |                     output_poll_execute
+                   |          |          |                     process_one_work
+                   |          |          |                     worker_thread
+                   |          |          |                     kthread
+                   |          |          |                     kernel_thread_helper
+                   |          |          |          
+                   |          |           --2.33%-- bit_xfer
+                   |          |                     i2c_transfer
+                   |          |                     |          
+                   |          |                     |--66.56%-- intel_sdvo_read_byte
+                   |          |                     |          intel_sdvo_read_response
+                   |          |                     |          intel_sdvo_detect
+                   |          |                     |          output_poll_execute
+                   |          |                     |          process_one_work
+                   |          |                     |          worker_thread
+                   |          |                     |          kthread
+                   |          |                     |          kernel_thread_helper
+                   |          |                     |          
+                   |          |                      --33.44%-- intel_sdvo_master_xfer
+                   |          |                                i2c_transfer
+                   |          |                                drm_do_probe_ddc_edid
+                   |          |                                drm_get_edid
+                   |          |                                intel_sdvo_hdmi_sink_detect
+                   |          |                                intel_sdvo_detect
+                   |          |                                output_poll_execute
+                   |          |                                process_one_work
+                   |          |                                worker_thread
+                   |          |                                kthread
+                   |          |                                kernel_thread_helper
+                   |          |          
+                   |           --0.94%-- ata_sff_pio_task
+                   |                     process_one_work
+                   |                     worker_thread
+                   |                     kthread
+                   |                     kernel_thread_helper
+                   |          
+                   |--41.27%-- __udelay
+                   |          |          
+                   |          |--47.81%-- sclhi
+                   |          |          |          
+                   |          |          |--80.24%-- i2c_outb
+                   |          |          |          |          
+                   |          |          |          |--67.22%-- try_address
+                   |          |          |          |          bit_xfer
+                   |          |          |          |          |          
+                   |          |          |          |          |--74.33%-- i2c_transfer
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--55.74%-- intel_sdvo_read_byte
+                   |          |          |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |          |--24.93%-- intel_sdvo_master_xfer
+                   |          |          |          |          |          |          i2c_transfer
+                   |          |          |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          |          |          drm_get_edid
+                   |          |          |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          |          process_one_work
+                   |          |          |          |          |          |          worker_thread
+                   |          |          |          |          |          |          kthread
+                   |          |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          |          
+                   |          |          |          |          |           --19.33%-- intel_sdvo_write_byte
+                   |          |          |          |          |                     |          
+                   |          |          |          |          |                     |--69.27%-- intel_sdvo_master_xfer
+                   |          |          |          |          |                     |          i2c_transfer
+                   |          |          |          |          |                     |          drm_do_probe_ddc_edid
+                   |          |          |          |          |                     |          drm_get_edid
+                   |          |          |          |          |                     |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          |                     |          intel_sdvo_detect
+                   |          |          |          |          |                     |          output_poll_execute
+                   |          |          |          |          |                     |          process_one_work
+                   |          |          |          |          |                     |          worker_thread
+                   |          |          |          |          |                     |          kthread
+                   |          |          |          |          |                     |          kernel_thread_helper
+                   |          |          |          |          |                     |          
+                   |          |          |          |          |                      --30.73%-- intel_sdvo_write_cmd
+                   |          |          |          |          |                                intel_sdvo_detect
+                   |          |          |          |          |                                output_poll_execute
+                   |          |          |          |          |                                process_one_work
+                   |          |          |          |          |                                worker_thread
+                   |          |          |          |          |                                kthread
+                   |          |          |          |          |                                kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --25.67%-- intel_sdvo_master_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |                     drm_get_edid
+                   |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |                     output_poll_execute
+                   |          |          |          |                     process_one_work
+                   |          |          |          |                     worker_thread
+                   |          |          |          |                     kthread
+                   |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --32.78%-- bit_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     |          
+                   |          |          |                     |--45.56%-- intel_sdvo_write_byte
+                   |          |          |                     |          |          
+                   |          |          |                     |          |--51.26%-- intel_sdvo_master_xfer
+                   |          |          |                     |          |          i2c_transfer
+                   |          |          |                     |          |          drm_do_probe_ddc_edid
+                   |          |          |                     |          |          drm_get_edid
+                   |          |          |                     |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |                     |          |          intel_sdvo_detect
+                   |          |          |                     |          |          output_poll_execute
+                   |          |          |                     |          |          process_one_work
+                   |          |          |                     |          |          worker_thread
+                   |          |          |                     |          |          kthread
+                   |          |          |                     |          |          kernel_thread_helper
+                   |          |          |                     |          |          
+                   |          |          |                     |           --48.74%-- intel_sdvo_write_cmd
+                   |          |          |                     |                     intel_sdvo_detect
+                   |          |          |                     |                     output_poll_execute
+                   |          |          |                     |                     process_one_work
+                   |          |          |                     |                     worker_thread
+                   |          |          |                     |                     kthread
+                   |          |          |                     |                     kernel_thread_helper
+                   |          |          |                     |          
+                   |          |          |                     |--28.14%-- intel_sdvo_read_byte
+                   |          |          |                     |          intel_sdvo_read_response
+                   |          |          |                     |          intel_sdvo_detect
+                   |          |          |                     |          output_poll_execute
+                   |          |          |                     |          process_one_work
+                   |          |          |                     |          worker_thread
+                   |          |          |                     |          kthread
+                   |          |          |                     |          kernel_thread_helper
+                   |          |          |                     |          
+                   |          |          |                      --26.31%-- intel_sdvo_master_xfer
+                   |          |          |                                i2c_transfer
+                   |          |          |                                drm_do_probe_ddc_edid
+                   |          |          |                                drm_get_edid
+                   |          |          |                                intel_sdvo_hdmi_sink_detect
+                   |          |          |                                intel_sdvo_detect
+                   |          |          |                                output_poll_execute
+                   |          |          |                                process_one_work
+                   |          |          |                                worker_thread
+                   |          |          |                                kthread
+                   |          |          |                                kernel_thread_helper
+                   |          |          |          
+                   |          |          |--15.21%-- bit_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          |          
+                   |          |          |          |--50.56%-- intel_sdvo_master_xfer
+                   |          |          |          |          i2c_transfer
+                   |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          drm_get_edid
+                   |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          output_poll_execute
+                   |          |          |          |          process_one_work
+                   |          |          |          |          worker_thread
+                   |          |          |          |          kthread
+                   |          |          |          |          kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --49.44%-- intel_sdvo_read_byte
+                   |          |          |                     intel_sdvo_read_response
+                   |          |          |                     intel_sdvo_detect
+                   |          |          |                     output_poll_execute
+                   |          |          |                     process_one_work
+                   |          |          |                     worker_thread
+                   |          |          |                     kthread
+                   |          |          |                     kernel_thread_helper
+                   |          |          |          
+                   |          |          |--2.26%-- i2c_stop
+                   |          |          |          bit_xfer
+                   |          |          |          |          
+                   |          |          |          |--65.95%-- i2c_transfer
+                   |          |          |          |          intel_sdvo_read_byte
+                   |          |          |          |          intel_sdvo_read_response
+                   |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          output_poll_execute
+                   |          |          |          |          process_one_work
+                   |          |          |          |          worker_thread
+                   |          |          |          |          kthread
+                   |          |          |          |          kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --34.05%-- intel_sdvo_master_xfer
+                   |          |          |                     i2c_transfer
+                   |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |                     drm_get_edid
+                   |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |                     intel_sdvo_detect
+                   |          |          |                     output_poll_execute
+                   |          |          |                     process_one_work
+                   |          |          |                     worker_thread
+                   |          |          |                     kthread
+                   |          |          |                     kernel_thread_helper
+                   |          |          |          
+                   |          |          |--1.52%-- acknak
+                   |          |          |          bit_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          intel_sdvo_read_byte
+                   |          |          |          intel_sdvo_read_response
+                   |          |          |          intel_sdvo_detect
+                   |          |          |          output_poll_execute
+                   |          |          |          process_one_work
+                   |          |          |          worker_thread
+                   |          |          |          kthread
+                   |          |          |          kernel_thread_helper
+                   |          |          |          
+                   |          |           --0.77%-- i2c_repstart
+                   |          |                     bit_xfer
+                   |          |                     i2c_transfer
+                   |          |                     intel_sdvo_master_xfer
+                   |          |                     i2c_transfer
+                   |          |                     drm_do_probe_ddc_edid
+                   |          |                     drm_get_edid
+                   |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |                     intel_sdvo_detect
+                   |          |                     output_poll_execute
+                   |          |                     process_one_work
+                   |          |                     worker_thread
+                   |          |                     kthread
+                   |          |                     kernel_thread_helper
+                   |          |          
+                   |          |--35.95%-- i2c_outb
+                   |          |          |          
+                   |          |          |--54.57%-- bit_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          |          
+                   |          |          |          |--44.96%-- intel_sdvo_master_xfer
+                   |          |          |          |          i2c_transfer
+                   |          |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          |          drm_get_edid
+                   |          |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          output_poll_execute
+                   |          |          |          |          process_one_work
+                   |          |          |          |          worker_thread
+                   |          |          |          |          kthread
+                   |          |          |          |          kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |          |--30.17%-- intel_sdvo_write_byte
+                   |          |          |          |          |          
+                   |          |          |          |          |--62.78%-- intel_sdvo_write_cmd
+                   |          |          |          |          |          intel_sdvo_detect
+                   |          |          |          |          |          output_poll_execute
+                   |          |          |          |          |          process_one_work
+                   |          |          |          |          |          worker_thread
+                   |          |          |          |          |          kthread
+                   |          |          |          |          |          kernel_thread_helper
+                   |          |          |          |          |          
+                   |          |          |          |           --37.22%-- intel_sdvo_master_xfer
+                   |          |          |          |                     i2c_transfer
+                   |          |          |          |                     drm_do_probe_ddc_edid
+                   |          |          |          |                     drm_get_edid
+                   |          |          |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |          |          |                     intel_sdvo_detect
+                   |          |          |          |                     output_poll_execute
+                   |          |          |          |                     process_one_work
+                   |          |          |          |                     worker_thread
+                   |          |          |          |                     kthread
+                   |          |          |          |                     kernel_thread_helper
+                   |          |          |          |          
+                   |          |          |           --24.87%-- intel_sdvo_read_byte
+                   |          |          |                     intel_sdvo_read_response
+                   |          |          |                     intel_sdvo_detect
+                   |          |          |                     output_poll_execute
+                   |          |          |                     process_one_work
+                   |          |          |                     worker_thread
+                   |          |          |                     kthread
+                   |          |          |                     kernel_thread_helper
+                   |          |          |          
+                   |          |           --45.43%-- try_address
+                   |          |                     bit_xfer
+                   |          |                     |          
+                   |          |                     |--61.71%-- i2c_transfer
+                   |          |                     |          |          
+                   |          |                     |          |--54.76%-- intel_sdvo_read_byte
+                   |          |                     |          |          intel_sdvo_read_response
+                   |          |                     |          |          intel_sdvo_detect
+                   |          |                     |          |          output_poll_execute
+                   |          |                     |          |          process_one_work
+                   |          |                     |          |          worker_thread
+                   |          |                     |          |          kthread
+                   |          |                     |          |          kernel_thread_helper
+                   |          |                     |          |          
+                   |          |                     |          |--23.35%-- intel_sdvo_write_byte
+                   |          |                     |          |          |          
+                   |          |                     |          |          |--68.82%-- intel_sdvo_write_cmd
+                   |          |                     |          |          |          intel_sdvo_detect
+                   |          |                     |          |          |          output_poll_execute
+                   |          |                     |          |          |          process_one_work
+                   |          |                     |          |          |          worker_thread
+                   |          |                     |          |          |          kthread
+                   |          |                     |          |          |          kernel_thread_helper
+                   |          |                     |          |          |          
+                   |          |                     |          |           --31.18%-- intel_sdvo_master_xfer
+                   |          |                     |          |                     i2c_transfer
+                   |          |                     |          |                     drm_do_probe_ddc_edid
+                   |          |                     |          |                     drm_get_edid
+                   |          |                     |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |                     |          |                     intel_sdvo_detect
+                   |          |                     |          |                     output_poll_execute
+                   |          |                     |          |                     process_one_work
+                   |          |                     |          |                     worker_thread
+                   |          |                     |          |                     kthread
+                   |          |                     |          |                     kernel_thread_helper
+                   |          |                     |          |          
+                   |          |                     |           --21.89%-- intel_sdvo_master_xfer
+                   |          |                     |                     i2c_transfer
+                   |          |                     |                     drm_do_probe_ddc_edid
+                   |          |                     |                     drm_get_edid
+                   |          |                     |                     intel_sdvo_hdmi_sink_detect
+                   |          |                     |                     intel_sdvo_detect
+                   |          |                     |                     output_poll_execute
+                   |          |                     |                     process_one_work
+                   |          |                     |                     worker_thread
+                   |          |                     |                     kthread
+                   |          |                     |                     kernel_thread_helper
+                   |          |                     |          
+                   |          |                      --38.29%-- intel_sdvo_master_xfer
+                   |          |                                i2c_transfer
+                   |          |                                drm_do_probe_ddc_edid
+                   |          |                                drm_get_edid
+                   |          |                                intel_sdvo_hdmi_sink_detect
+                   |          |                                intel_sdvo_detect
+                   |          |                                output_poll_execute
+                   |          |                                process_one_work
+                   |          |                                worker_thread
+                   |          |                                kthread
+                   |          |                                kernel_thread_helper
+                   |          |          
+                   |          |--5.39%-- bit_xfer
+                   |          |          i2c_transfer
+                   |          |          |          
+                   |          |          |--72.70%-- intel_sdvo_read_byte
+                   |          |          |          intel_sdvo_read_response
+                   |          |          |          intel_sdvo_detect
+                   |          |          |          output_poll_execute
+                   |          |          |          process_one_work
+                   |          |          |          worker_thread
+                   |          |          |          kthread
+                   |          |          |          kernel_thread_helper
+                   |          |          |          
+                   |          |           --27.30%-- intel_sdvo_master_xfer
+                   |          |                     i2c_transfer
+                   |          |                     drm_do_probe_ddc_edid
+                   |          |                     drm_get_edid
+                   |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |                     intel_sdvo_detect
+                   |          |                     output_poll_execute
+                   |          |                     process_one_work
+                   |          |                     worker_thread
+                   |          |                     kthread
+                   |          |                     kernel_thread_helper
+                   |          |          
+                   |          |--2.94%-- i2c_start
+                   |          |          |          
+                   |          |          |--62.60%-- try_address
+                   |          |          |          bit_xfer
+                   |          |          |          intel_sdvo_master_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          drm_get_edid
+                   |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          intel_sdvo_detect
+                   |          |          |          output_poll_execute
+                   |          |          |          process_one_work
+                   |          |          |          worker_thread
+                   |          |          |          kthread
+                   |          |          |          kernel_thread_helper
+                   |          |          |          
+                   |          |           --37.40%-- bit_xfer
+                   |          |                     i2c_transfer
+                   |          |                     intel_sdvo_write_byte
+                   |          |                     |          
+                   |          |                     |--66.68%-- intel_sdvo_master_xfer
+                   |          |                     |          i2c_transfer
+                   |          |                     |          drm_do_probe_ddc_edid
+                   |          |                     |          drm_get_edid
+                   |          |                     |          intel_sdvo_hdmi_sink_detect
+                   |          |                     |          intel_sdvo_detect
+                   |          |                     |          output_poll_execute
+                   |          |                     |          process_one_work
+                   |          |                     |          worker_thread
+                   |          |                     |          kthread
+                   |          |                     |          kernel_thread_helper
+                   |          |                     |          
+                   |          |                      --33.32%-- intel_sdvo_write_cmd
+                   |          |                                intel_sdvo_detect
+                   |          |                                output_poll_execute
+                   |          |                                process_one_work
+                   |          |                                worker_thread
+                   |          |                                kthread
+                   |          |                                kernel_thread_helper
+                   |          |          
+                   |          |--2.83%-- i2c_stop
+                   |          |          |          
+                   |          |          |--52.04%-- try_address
+                   |          |          |          bit_xfer
+                   |          |          |          intel_sdvo_master_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          drm_get_edid
+                   |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          intel_sdvo_detect
+                   |          |          |          output_poll_execute
+                   |          |          |          process_one_work
+                   |          |          |          worker_thread
+                   |          |          |          kthread
+                   |          |          |          kernel_thread_helper
+                   |          |          |          
+                   |          |           --47.96%-- bit_xfer
+                   |          |                     i2c_transfer
+                   |          |                     |          
+                   |          |                     |--51.56%-- intel_sdvo_read_byte
+                   |          |                     |          intel_sdvo_read_response
+                   |          |                     |          intel_sdvo_detect
+                   |          |                     |          output_poll_execute
+                   |          |                     |          process_one_work
+                   |          |                     |          worker_thread
+                   |          |                     |          kthread
+                   |          |                     |          kernel_thread_helper
+                   |          |                     |          
+                   |          |                     |--27.13%-- intel_sdvo_master_xfer
+                   |          |                     |          i2c_transfer
+                   |          |                     |          drm_do_probe_ddc_edid
+                   |          |                     |          drm_get_edid
+                   |          |                     |          intel_sdvo_hdmi_sink_detect
+                   |          |                     |          intel_sdvo_detect
+                   |          |                     |          output_poll_execute
+                   |          |                     |          process_one_work
+                   |          |                     |          worker_thread
+                   |          |                     |          kthread
+                   |          |                     |          kernel_thread_helper
+                   |          |                     |          
+                   |          |                      --21.31%-- intel_sdvo_write_byte
+                   |          |                                intel_sdvo_write_cmd
+                   |          |                                intel_sdvo_detect
+                   |          |                                output_poll_execute
+                   |          |                                process_one_work
+                   |          |                                worker_thread
+                   |          |                                kthread
+                   |          |                                kernel_thread_helper
+                   |          |          
+                   |          |--2.56%-- i2c_repstart
+                   |          |          bit_xfer
+                   |          |          i2c_transfer
+                   |          |          |          
+                   |          |          |--71.95%-- intel_sdvo_master_xfer
+                   |          |          |          i2c_transfer
+                   |          |          |          drm_do_probe_ddc_edid
+                   |          |          |          drm_get_edid
+                   |          |          |          intel_sdvo_hdmi_sink_detect
+                   |          |          |          intel_sdvo_detect
+                   |          |          |          output_poll_execute
+                   |          |          |          process_one_work
+                   |          |          |          worker_thread
+                   |          |          |          kthread
+                   |          |          |          kernel_thread_helper
+                   |          |          |          
+                   |          |           --28.05%-- intel_sdvo_read_byte
+                   |          |                     intel_sdvo_read_response
+                   |          |                     intel_sdvo_detect
+                   |          |                     output_poll_execute
+                   |          |                     process_one_work
+                   |          |                     worker_thread
+                   |          |                     kthread
+                   |          |                     kernel_thread_helper
+                   |          |          
+                   |          |--1.79%-- acknak
+                   |          |          bit_xfer
+                   |          |          i2c_transfer
+                   |          |          |          
+                   |          |          |--79.48%-- intel_sdvo_read_byte
+                   |          |          |          intel_sdvo_read_response
+                   |          |          |          intel_sdvo_detect
+                   |          |          |          output_poll_execute
+                   |          |          |          process_one_work
+                   |          |          |          worker_thread
+                   |          |          |          kthread
+                   |          |          |          kernel_thread_helper
+                   |          |          |          
+                   |          |           --20.52%-- intel_sdvo_master_xfer
+                   |          |                     i2c_transfer
+                   |          |                     drm_do_probe_ddc_edid
+                   |          |                     drm_get_edid
+                   |          |                     intel_sdvo_hdmi_sink_detect
+                   |          |                     intel_sdvo_detect
+                   |          |                     output_poll_execute
+                   |          |                     process_one_work
+                   |          |                     worker_thread
+                   |          |                     kthread
+                   |          |                     kernel_thread_helper
+                   |          |          
+                   |           --0.74%-- try_address
+                   |                     bit_xfer
+                   |                     intel_sdvo_master_xfer
+                   |                     i2c_transfer
+                   |                     drm_do_probe_ddc_edid
+                   |                     drm_get_edid
+                   |                     intel_sdvo_hdmi_sink_detect
+                   |                     intel_sdvo_detect
+                   |                     output_poll_execute
+                   |                     process_one_work
+                   |                     worker_thread
+                   |                     kthread
+                   |                     kernel_thread_helper
+                    --0.15%-- [...]
+
+    10.91%          swapper  [kernel.kallsyms]            [k] read_hpet
+     2.71%      kworker/0:2  [kernel.kallsyms]            [k] kmem_cache_alloc
+                |
+                --- kmem_cache_alloc
+                   |          
+                   |--33.13%-- acpi_ps_alloc_op
+                   |          |          
+                   |          |--76.46%-- acpi_ps_parse_loop
+                   |          |          acpi_ps_parse_aml
+                   |          |          acpi_ps_execute_method
+                   |          |          acpi_ns_evaluate
+                   |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          acpi_os_execute_deferred
+                   |          |          process_one_work
+                   |          |          worker_thread
+                   |          |          kthread
+                   |          |          kernel_thread_helper
+                   |          |          
+                   |          |--14.48%-- acpi_ps_get_next_arg
+                   |          |          acpi_ps_parse_loop
+                   |          |          acpi_ps_parse_aml
+                   |          |          acpi_ps_execute_method
+                   |          |          acpi_ns_evaluate
+                   |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          acpi_os_execute_deferred
+                   |          |          process_one_work
+                   |          |          worker_thread
+                   |          |          kthread
+                   |          |          kernel_thread_helper
+                   |          |          
+                   |           --9.06%-- acpi_ps_complete_this_op
+                   |                     acpi_ps_complete_op
+                   |                     acpi_ps_parse_loop
+                   |                     acpi_ps_parse_aml
+                   |                     acpi_ps_execute_method
+                   |                     acpi_ns_evaluate
+                   |                     acpi_ev_asynch_execute_gpe_method
+                   |                     acpi_os_execute_deferred
+                   |                     process_one_work
+                   |                     worker_thread
+                   |                     kthread
+                   |                     kernel_thread_helper
+                   |          
+                   |--31.47%-- acpi_ut_allocate_object_desc_dbg
+                   |          acpi_ut_create_internal_object_dbg
+                   |          |          
+                   |          |--58.69%-- acpi_ds_create_operand
+                   |          |          acpi_ds_create_operands
+                   |          |          acpi_ds_exec_end_op
+                   |          |          acpi_ps_parse_loop
+                   |          |          acpi_ps_parse_aml
+                   |          |          acpi_ps_execute_method
+                   |          |          acpi_ns_evaluate
+                   |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          acpi_os_execute_deferred
+                   |          |          process_one_work
+                   |          |          worker_thread
+                   |          |          kthread
+                   |          |          kernel_thread_helper
+                   |          |          
+                   |          |--17.30%-- acpi_ex_opcode_2A_1T_1R
+                   |          |          acpi_ds_exec_end_op
+                   |          |          acpi_ps_parse_loop
+                   |          |          acpi_ps_parse_aml
+                   |          |          acpi_ps_execute_method
+                   |          |          acpi_ns_evaluate
+                   |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          acpi_os_execute_deferred
+                   |          |          process_one_work
+                   |          |          worker_thread
+                   |          |          kthread
+                   |          |          kernel_thread_helper
+                   |          |          
+                   |          |--9.58%-- acpi_ut_create_integer_object
+                   |          |          |          
+                   |          |          |--73.32%-- acpi_ex_read_data_from_field
+                   |          |          |          acpi_ex_resolve_node_to_value
+                   |          |          |          acpi_ex_resolve_to_value
+                   |          |          |          acpi_ds_evaluate_name_path
+                   |          |          |          acpi_ds_exec_end_op
+                   |          |          |          acpi_ps_parse_loop
+                   |          |          |          acpi_ps_parse_aml
+                   |          |          |          acpi_ps_execute_method
+                   |          |          |          acpi_ns_evaluate
+                   |          |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          |          acpi_os_execute_deferred
+                   |          |          |          process_one_work
+                   |          |          |          worker_thread
+                   |          |          |          kthread
+                   |          |          |          kernel_thread_helper
+                   |          |          |          
+                   |          |           --26.68%-- acpi_ps_execute_method
+                   |          |                     acpi_ns_evaluate
+                   |          |                     acpi_ev_asynch_execute_gpe_method
+                   |          |                     acpi_os_execute_deferred
+                   |          |                     process_one_work
+                   |          |                     worker_thread
+                   |          |                     kthread
+                   |          |                     kernel_thread_helper
+                   |          |          
+                   |          |--8.85%-- acpi_ex_opcode_2A_0T_1R
+                   |          |          acpi_ds_exec_end_op
+                   |          |          acpi_ps_parse_loop
+                   |          |          acpi_ps_parse_aml
+                   |          |          acpi_ps_execute_method
+                   |          |          acpi_ns_evaluate
+                   |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          acpi_os_execute_deferred
+                   |          |          process_one_work
+                   |          |          worker_thread
+                   |          |          kthread
+                   |          |          kernel_thread_helper
+                   |          |          
+                   |           --5.58%-- acpi_ut_copy_iobject_to_iobject
+                   |                     acpi_ds_evaluate_name_path
+                   |                     acpi_ds_exec_end_op
+                   |                     acpi_ps_parse_loop
+                   |                     acpi_ps_parse_aml
+                   |                     acpi_ps_execute_method
+                   |                     acpi_ns_evaluate
+                   |                     acpi_ev_asynch_execute_gpe_method
+                   |                     acpi_os_execute_deferred
+                   |                     process_one_work
+                   |                     worker_thread
+                   |                     kthread
+                   |                     kernel_thread_helper
+                   |          
+                   |--30.79%-- acpi_ut_create_generic_state
+                   |          |          
+                   |          |--53.14%-- acpi_ps_push_scope
+                   |          |          acpi_ps_parse_loop
+                   |          |          acpi_ps_parse_aml
+                   |          |          acpi_ps_execute_method
+                   |          |          acpi_ns_evaluate
+                   |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          acpi_os_execute_deferred
+                   |          |          process_one_work
+                   |          |          worker_thread
+                   |          |          kthread
+                   |          |          kernel_thread_helper
+                   |          |          
+                   |          |--31.04%-- acpi_ds_result_push
+                   |          |          |          
+                   |          |          |--70.35%-- acpi_ds_exec_end_op
+                   |          |          |          acpi_ps_parse_loop
+                   |          |          |          acpi_ps_parse_aml
+                   |          |          |          acpi_ps_execute_method
+                   |          |          |          acpi_ns_evaluate
+                   |          |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          |          acpi_os_execute_deferred
+                   |          |          |          process_one_work
+                   |          |          |          worker_thread
+                   |          |          |          kthread
+                   |          |          |          kernel_thread_helper
+                   |          |          |          
+                   |          |           --29.65%-- acpi_ds_evaluate_name_path
+                   |          |                     acpi_ds_exec_end_op
+                   |          |                     acpi_ps_parse_loop
+                   |          |                     acpi_ps_parse_aml
+                   |          |                     acpi_ps_execute_method
+                   |          |                     acpi_ns_evaluate
+                   |          |                     acpi_ev_asynch_execute_gpe_method
+                   |          |                     acpi_os_execute_deferred
+                   |          |                     process_one_work
+                   |          |                     worker_thread
+                   |          |                     kthread
+                   |          |                     kernel_thread_helper
+                   |          |          
+                   |          |--10.41%-- acpi_ut_create_control_state
+                   |          |          acpi_ds_exec_begin_control_op
+                   |          |          acpi_ds_exec_begin_op
+                   |          |          acpi_ps_parse_loop
+                   |          |          acpi_ps_parse_aml
+                   |          |          acpi_ps_execute_method
+                   |          |          acpi_ns_evaluate
+                   |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          acpi_os_execute_deferred
+                   |          |          process_one_work
+                   |          |          worker_thread
+                   |          |          kthread
+                   |          |          kernel_thread_helper
+                   |          |          
+                   |           --5.41%-- acpi_ps_init_scope
+                   |                     acpi_ds_init_aml_walk
+                   |                     |          
+                   |                     |--52.13%-- acpi_ds_call_control_method
+                   |                     |          acpi_ps_parse_aml
+                   |                     |          acpi_ps_execute_method
+                   |                     |          acpi_ns_evaluate
+                   |                     |          acpi_ev_asynch_execute_gpe_method
+                   |                     |          acpi_os_execute_deferred
+                   |                     |          process_one_work
+                   |                     |          worker_thread
+                   |                     |          kthread
+                   |                     |          kernel_thread_helper
+                   |                     |          
+                   |                      --47.87%-- acpi_ps_execute_method
+                   |                                acpi_ns_evaluate
+                   |                                acpi_ev_asynch_execute_gpe_method
+                   |                                acpi_os_execute_deferred
+                   |                                process_one_work
+                   |                                worker_thread
+                   |                                kthread
+                   |                                kernel_thread_helper
+                   |          
+                   |--2.84%-- acpi_ds_create_walk_state
+                   |          |          
+                   |          |--51.83%-- acpi_ps_execute_method
+                   |          |          acpi_ns_evaluate
+                   |          |          acpi_ev_asynch_execute_gpe_method
+                   |          |          acpi_os_execute_deferred
+                   |          |          process_one_work
+                   |          |          worker_thread
+                   |          |          kthread
+                   |          |          kernel_thread_helper
+                   |          |          
+                   |           --48.17%-- acpi_ds_call_control_method
+                   |                     acpi_ps_parse_aml
+                   |                     acpi_ps_execute_method
+                   |                     acpi_ns_evaluate
+                   |                     acpi_ev_asynch_execute_gpe_method
+                   |                     acpi_os_execute_deferred
+                   |                     process_one_work
+                   |                     worker_thread
+                   |                     kthread
+                   |                     kernel_thread_helper
+                   |          
+                   |--0.80%-- acpi_ev_asynch_execute_gpe_method
+                   |          acpi_os_execute_deferred
+                   |          process_one_work
+                   |          worker_thread
+                   |          kthread
+                   |          kernel_thread_helper
+                    --0.97%-- [...]
+
