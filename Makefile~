@@ -1,8 +1,0 @@
-hello : a.o b.o
-	gcc -o hello a.o b.o
-
-b.o : b.c
-	gcc b.c
-
-a.o : a.c
-	gcc a.c
