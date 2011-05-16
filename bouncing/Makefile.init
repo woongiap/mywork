@@ -1,0 +1,17 @@
+# Make "init" project
+
+CC = gcc
+CFLAGS = -Wall -D_DEBUG_ON `sdl-config --cflags`
+CXXFLAGS = -Wall `sdl-config --cflags`
+LDFLAGS = `sdl-config --libs` -lSDL -lSDL_mixer -lm
+SRC = init.c
+OBJ = init.o
+TARGET = init
+
+all: $(TARGET)
+
+$(TARGET): $(OBJ)
+	$(CC) $(LDFLAGS) -o $(TARGET) $(OBJ)
+
+clean:
+	rm -f $(TARGET) $(OBJ) core
