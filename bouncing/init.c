@@ -23,11 +23,12 @@ const char *get_eventname(Uint8 type);
 int main(int argc, char *argv[])
 {
 	char *cp, *s = "abcdefghijklmnopqrswxyz";
-	SDL_Surface *screen;
+	SDL_Surface *screen, *image;
 	/* Code to set a blue pixel at the center of the screen */
     	int x, y, n, quit = 0;
     	Uint32 blue;
     	SDL_Event event;
+    	SDL_Rect rect, img_rect;;
 
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) == -1) {
         	die(SDL_GetError());
@@ -40,9 +41,11 @@ int main(int argc, char *argv[])
     	debug_surface(screen);
 	
     	/* Map the color blue to this display (R=0x00, G=0x00, B=0xFF)
-       	   Note:  If the display is palettized, you must set the palette first.
+       	   Note: If the display is palettized, you must set the palette first.
     	*/
     	blue = SDL_MapRGB(screen->format, 0x00, 0x00, 0xff);
+    	image = SDL_LoadBMP("img/robot.bmp");
+    	if (image == NULL) die(SDL_GetError());
 
     	x = 0;
     	y = 0;
@@ -54,13 +57,27 @@ int main(int argc, char *argv[])
             		die(SDL_GetError());
         	}
     	}
-
+	// set bgcolor
+	SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, 255, 255, 255));
 	for (n = 0; n < 10; n++)
-    		putpixel(screen, x + n, y + n, blue);    	
+    		putpixel(screen, x + n, y + n, blue);
+    	rect.x = rect.y = 30;
+    	rect.w = 100;
+    	rect.h = 20;
+	SDL_SetClipRect(screen, &rect);    		
+	SDL_FillRect(screen, &rect, blue);    		  	
 
     	if (SDL_MUSTLOCK(screen))
         	SDL_UnlockSurface(screen);
-    
+
+ 	/* Blit onto the screen surface */
+ 	img_rect.x = img_rect.y = 60;
+ 	img_rect.w = image->w;
+ 	img_rect.h = image->h;
+ 	SDL_SetClipRect(screen, &img_rect);
+    	if (SDL_BlitSurface(image, NULL, screen, &img_rect) < 0)
+        	fprintf(stderr, "BlitSurface error: %s\n", SDL_GetError());
+        	
     	/* Update just the part of the display that we've changed */
     	SDL_UpdateRect(screen, 0, 0, SCR_WIDTH, SCR_HEIGHT);
 
@@ -76,6 +93,10 @@ int main(int argc, char *argv[])
 	      		case SDL_KEYDOWN:
 	      			if (event.key.keysym.sym == SDLK_q)
 	      				quit = 1;
+	      			else if (event.key.keysym.sym == SDLK_f) {
+	      				SDL_WM_ToggleFullScreen(screen);
+	      				debug_surface(screen);
+	      			}
 	      			break;
 	      		case SDL_KEYUP:
 				break;
