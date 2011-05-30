@@ -36,7 +36,29 @@ int main(int argc, char *argv[])
 	DEBUG("SDL initialized");
 	// hook this up at exit
     	atexit(SDL_Quit);
-    	screen = SDL_SetVideoMode(SCR_WIDTH, SCR_HEIGHT, 16, SDL_HWSURFACE|SDL_RESIZABLE|SDL_ANYFORMAT);
+	/*
+	 * Now, we want to setup our requested
+	 * window attributes for our OpenGL window.
+	 * We want *at least* 5 bits of red, green
+	 * and blue. We also want at least a 16-bit
+	 * depth buffer.
+	 *
+	 * The last thing we do is request a double
+	 * buffered window. '1' turns on double
+	 * buffering, '0' turns it off.
+	 *
+	 * Note that we do not use SDL_DOUBLEBUF in
+	 * the flags to SDL_SetVideoMode. That does
+	 * not affect the GL attribute state, only
+	 * the standard 2D blitting setup.
+	 */
+	SDL_GL_SetAttribute( SDL_GL_RED_SIZE, 5 );
+	SDL_GL_SetAttribute( SDL_GL_GREEN_SIZE, 5 );
+	SDL_GL_SetAttribute( SDL_GL_BLUE_SIZE, 5 );
+	SDL_GL_SetAttribute( SDL_GL_DEPTH_SIZE, 16 );
+	SDL_GL_SetAttribute( SDL_GL_DOUBLEBUFFER, 1 );
+    	//screen = SDL_SetVideoMode(SCR_WIDTH, SCR_HEIGHT, 16, SDL_HWSURFACE|SDL_RESIZABLE|SDL_ANYFORMAT);
+	screen = SDL_SetVideoMode(SCR_WIDTH, SCR_HEIGHT, 16, SDL_OPENGL|SDL_FULLSCREEN);
     	if (!screen) die("fail to create framebuffer");
     	debug_surface(screen);
 	
