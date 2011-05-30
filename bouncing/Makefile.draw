@@ -3,10 +3,10 @@
 CC = gcc
 CFLAGS = -Wall -D_DEBUG_ON `sdl-config --cflags`
 CXXFLAGS = -Wall `sdl-config --cflags`
-LDFLAGS = `sdl-config --libs` -lSDL_mixer -lm -lpthread
-SRC = init.c
-OBJ = init.o
-TARGET = init
+LDFLAGS = `sdl-config --libs` -lm -lpthread -lSDL_mixer -lGL -lGLU
+SRC = draw.c
+OBJ = draw.o
+TARGET = draw
 
 all: $(TARGET)
 
