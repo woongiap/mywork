@@ -1,4 +1,6 @@
 *.o
 *.so
 *.out
+draw
+bouncing
 
