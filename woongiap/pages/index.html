@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>My Diary</title>
+	 	<link type="text/css" rel="stylesheet" href="/css/bootstrap.css" />
+	 	<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+	 	<script src="/js/jquery.js"></script>
+	 	<script src="/js/bootstrap.js"></script>
+	</head>
+  	<body>
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Project name</a>
+          <div class="btn-group pull-right">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="icon-user"></i> Username
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+          </div>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>  	
+    {% for entry in entries %}
+      {% if entry.author %}
+        <b>{{ entry.author.nickname() }}</b> wrote:
+      {% else %}
+        An anonymous person wrote:
+      {% endif %}
+      <blockquote>{{ entry.content|escape }}</blockquote>
+    {% endfor %}
+
+    <form action="/write" method="post">
+      <div><textarea name="content" rows="10" cols="80"></textarea></div>
+      <div><input type="submit" value="Post"></div>
+    </form>
+
+    <a href="{{ url }}">{{ url_linktext }}</a>
+  	</body>
+</html>

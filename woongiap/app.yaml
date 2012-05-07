@@ -1,0 +1,19 @@
+application: woongiap
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /img
+  static_dir: pages/img
+- url: /css
+  static_dir: pages/css
+- url: /js
+  static_dir: pages/js
+- url: /.*
+  script: helloworld.app
+  
+libraries:
+- name: jinja2
+  version: latest  
