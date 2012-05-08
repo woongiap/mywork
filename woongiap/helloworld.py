@@ -5,6 +5,7 @@ import webapp2
 
 from google.appengine.ext import db
 from google.appengine.api import users
+from fluid import Fluid
 
 import jinja2
 import os
@@ -64,11 +65,6 @@ class Diary(webapp2.RequestHandler):
     entry.content = self.request.get('content')
     entry.put()
     self.redirect('/?' + urllib.urlencode({'diary_name': diary_name}))
-
-class Fluid(webapp2.RequestHandler):
-  def get(self):
-    template = jinja_environment.get_template('pages/fluid.html')
-    self.response.out.write(template.render())
 
 app = webapp2.WSGIApplication([('/', MainPage),
                                ('/write', Diary),
