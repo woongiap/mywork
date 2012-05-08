@@ -65,6 +65,12 @@ class Diary(webapp2.RequestHandler):
     entry.put()
     self.redirect('/?' + urllib.urlencode({'diary_name': diary_name}))
 
+class Fluid(webapp2.RequestHandler):
+  def get(self):
+    template = jinja_environment.get_template('pages/fluid.html')
+    self.response.out.write(template.render())
+
 app = webapp2.WSGIApplication([('/', MainPage),
-                               ('/write', Diary)],
+                               ('/write', Diary),
+                               ('/fluid', Fluid)],
                               debug=True)
