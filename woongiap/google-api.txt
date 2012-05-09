@@ -1,2 +1,19 @@
-google api key
+Client ID: 	
+782065305609.apps.googleusercontent.com
+Email address: 	
+782065305609@developer.gserviceaccount.com
+Client secret: 	
+esCgOcxN72ndG4JkREZzdL-H
+Redirect URIs: 	http://woongiap.appspot.com/oauth2callback
+JavaScript origins: 	http://woongiap.appspot.com/
+
+google API key
 AIzaSyCncenaTFpKPjOdIAmXulaag_0qVPxvNeg
+
+
+https://www.googleapis.com/tasks/v1/users/woongiap/lists/s?pp=1&key=AIzaSyCncenaTFpKPjOdIAmXulaag_0qVPxvNeg
+
+https://www.googleapis.com/tasks/v1/users/@me/lists?maxResults=5&pp=1&key=AIzaSyCncenaTFpKPjOdIAmXulaag_0qVPxvNeg
+
+f=urllib2.urlopen('https://www.googleapis.com/tasks/v1/users/woongiap/lists/s?pp=1&key=AIzaSyCncenaTFpKPjOdIAmXulaag_0qVPxvNeg')
+auth_handler.add_password(realm='PDQ Application',uri='https://gmail.com',user='woongiap',passwd='***')
