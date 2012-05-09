@@ -127,7 +127,6 @@ static void draw_screen( void )
             angle = 0.0f;
         }
     }
-
     /* Send our triangle data to the pipeline. */
     glBegin( GL_TRIANGLES );
 
@@ -364,7 +363,10 @@ int main( int argc, char* argv[] )
      * double-buffered window for use with OpenGL.
      */
     setup_opengl( width, height );
-
+    printf("GL_VENDOR %s\n", glGetString(GL_VENDOR));
+    printf("GL_VERSION %s\n", glGetString(GL_VERSION));
+    printf("GL_RENDERER %s\n", glGetString(GL_RENDERER));
+    printf("GL_EXTENSIONS %s\n", glGetString(GL_EXTENSIONS));
     /*
      * Now we want to begin our normal app process--
      * an event loop with a lot of redrawing.

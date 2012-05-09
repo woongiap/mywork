@@ -2,7 +2,7 @@ application: woongiap
 version: 2
 runtime: python27
 api_version: 1
-threadsafe: true
+threadsafe: False
 
 handlers:
 - url: /img
@@ -12,8 +12,12 @@ handlers:
 - url: /js
   static_dir: pages/js
 - url: /.*
-  script: helloworld.app
+  script: main.py
   
 libraries:
-- name: jinja2
-  version: latest  
+- name: django
+  version: "1.2"
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: 'settings'
+
