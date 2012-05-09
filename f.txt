@@ -1,0 +1,23 @@
+one
+==================
+1. 
+Because the program is not producing the expected result.
+- “j” should start adding to “no”, not “no + 1”
+- the original number “n” should remain unchanged
+- no checking of NULL pointer passed in
+- no checking for negative value of "n" and integer values in array
+2. 
+int avg(int n, int* no)
+{
+	int sum, temp_n, temp;
+	if (n < 1 || no == NULL)
+	    return -1;
+    	temp_n = n;
+	for (sum = 0; temp_n >= 1; temp_n--) {
+		if ((temp = *(no++)) >= 0)
+			sum += temp;
+	}
+	return sum/n;
+}
+3. 
+
