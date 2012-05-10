@@ -6,11 +6,11 @@ threadsafe: False
 
 handlers:
 - url: /img
-  static_dir: pages/img
+  static_dir: img
 - url: /css
-  static_dir: pages/css
+  static_dir: css
 - url: /js
-  static_dir: pages/js
+  static_dir: js
 - url: /.*
   script: main.py
   

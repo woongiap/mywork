@@ -7,7 +7,7 @@ import logging
 
 from google.appengine.ext.webapp import util
 import django.core.handlers.wsgi
-from views import req
+from ngiap.view import req
 
 def main():
   #sys.stdout.write(req.test())
