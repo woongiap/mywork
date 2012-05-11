@@ -1,10 +1,13 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 import datetime
+from ngiap.model.obj import Category
 
 def main(req):
     	now = datetime.datetime.now()
-    	html = "<html><body>Now %s.</body></html>" % now
+    	c = Category('90')
+    	c.put()
+    	html = "<html><body>Now %s : %s key(%s)</body></html>" % (now, c.getName(), c.key().id())
     	return HttpResponse(html)
     	
 def serve(req):

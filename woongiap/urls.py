@@ -7,7 +7,7 @@ from django.conf.urls.defaults import *
 # how to deal with pattern???!!!
 urlpatterns = patterns('',
     (r'^home$', "ngiap.view.req.serve"),
-    ('', "views.req.main"),
+    ('', "ngiap.view.req.main"),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
