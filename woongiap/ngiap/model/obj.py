@@ -1,7 +1,9 @@
+from datetime import date
 from google.appengine.ext import db
 from ngiap import global_util
 
 class Category(db.Model):
+	"""
 	pInteger = db.IntegerProperty()
 	pFloat = db.FloatProperty()
 	bBoolean = db.BooleanProperty()
@@ -20,11 +22,12 @@ class Category(db.Model):
 	bLinkProperty = db.LinkProperty()
 	bCategoryProperty = db.CategoryProperty()
 	bRatingProperty = db.RatingProperty()
+	"""
 	
 	__id = db.StringProperty()
 	
-	def __init__(self, id):
-		super(Category, self).__init__()
+	def __init__(self, id, **kwds):
+		super(Category, self).__init__(**kwds)
 		self.__id = id
 	
 	def getId(self):
@@ -39,7 +42,7 @@ class Category(db.Model):
 class Comment(db.Model):
 	__c_id = db.IntegerProperty()
 	__c_text = db.StringProperty(multiline=True)
-	__c_date = db.DateTimeProperty()
+	__c_date = db.DateTimeProperty(auto_now_add=True)
 	__c_byname = db.StringProperty()
 	__c_byuserid = db.IntegerProperty()
 	
@@ -90,12 +93,12 @@ class Post(db.Model):
 	__html_desc = db.StringProperty(multiline=True)
 	__location = db.StringProperty()
 	__divcode = db.StringProperty()
-	__category = None
+	__category = db.ReferenceProperty(Category)
 	__num_view = db.IntegerProperty()
 	__num_comment = db.IntegerProperty()
 	__num_like = db.IntegerProperty()
 	__state = db.IntegerProperty()
-	__create_date = db.DateTimeProperty()
+	__create_date = db.DateTimeProperty(auto_now_add=True)
 	__by_username = db.StringProperty()
 	__by_userid = db.IntegerProperty()
 	
@@ -159,7 +162,82 @@ class Post(db.Model):
 		self.__by_userid = n
 	def getByUserId(self):
 		return self.__by_userid
-	
+
 class User(db.Model):
-	pass
-	# TODO
+	__username = db.StringProperty()
+	__alt_email = db.EmailProperty()
+	__password = db.StringProperty()
+	__display_name = db.StringProperty()
+	__gender = db.StringProperty()
+	__birth_date = db.DateProperty()
+	__id = db.IntegerProperty()
+
+	def __init__(self, password=''):
+		super(User, self).__init__()
+		self.__password = password
+
+	def setId(self, id):
+		self.__id = id;
+	def getId(self):
+		return __self.id
+
+	def setUsername(self, s):
+		self.__username = s
+	def getUsername(self):
+		return self__.username
+
+	def setDisplayname(self, s):
+		self.__display_name = s
+	def getDisplayname(self):
+		return self.__display_name
+
+	def setAltEmail(self, s):
+		self.__alt_email = s
+	def getAltEmail(self):
+		return self.__alt_email
+
+	def setGender(self, g):
+		self.__gender = g
+	def getGender(self):
+		return self.__gender
+
+	def setBirthdate(self, bdate):
+		self.__birth_date = bdate
+	def getBirthdate(self):
+		return self.__birth_date
+	def getBirthdateDBStr(self):
+		if self.__birth_date is None:
+			return "NULL"
+		return self.getBirthdate().strftime("%Y-%b-%d")
+
+	def signup(self):
+		self.__password = sha(self.__password)
+		code = get_confirm_code()
+		self.__id = user_new_id()
+		# persist the model
+		self.put()
+		"""
+		q = insert into k_user
+			(user_id, user_name, user_passwd, display_name, alt_email, signup_date, gender, birth_date, last_key)
+				values (new_id, 'username', sha('password'), 'displayname', 'alt_email', now(),
+				'gender',bdate_str,'code')
+		"""
+		confirm_code_send(self.getUsername(), code)
+		return True
+
+	def getDBAccount(self):		
+		#k = Key.from_path('User', self.getId())
+		#db.get(k)
+		self = db.Model.get_by_id(self.getId())
+		#select * from k_user where user_id=id
+		return self.__username is not None
+
+	def updateDBAccount(self):
+		self.put()
+		"""
+		update k_user set display_name=getDisplayname()
+		,alt_email=getAltEmail()
+		where user_id=getId()
+		"""
+		return True
+		
