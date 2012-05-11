@@ -1,6 +1,6 @@
-ANY_STATE='MY-all'
-ANY_CATEGORY='999'
-g_category_map={
+ANY_STATE = 'MY-all'
+ANY_CATEGORY = '999'
+g_category_map = {
 				'180':('Food & Drink', 'k_ft_180'), # put 'food' the first
 				'90':('Car & Vehicle', 'k_ft_090'),
 				'240':('Housing & Apartment', 'k_ft_240'),
@@ -47,7 +47,7 @@ def k_category_getname(category_id):
 		return False
 	return g_category_map[category_id][0]
 
-g_state_map={
+g_state_map = {
 			'MY-14':'Kuala Lumpur',
 			'MY-01':'Johor',
 			'MY-02':'Kedah',
