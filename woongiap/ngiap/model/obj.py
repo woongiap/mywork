@@ -171,6 +171,8 @@ class User(db.Model):
 	__gender = db.StringProperty()
 	__birth_date = db.DateProperty()
 	__id = db.IntegerProperty()
+	ustate = db.IntegerProperty()
+	last_key = db.StringProperty()
 
 	def __init__(self, password=''):
 		super(User, self).__init__()
@@ -205,6 +207,7 @@ class User(db.Model):
 		self.__birth_date = bdate
 	def getBirthdate(self):
 		return self.__birth_date
+		
 	def getBirthdateDBStr(self):
 		if self.__birth_date is None:
 			return "NULL"
