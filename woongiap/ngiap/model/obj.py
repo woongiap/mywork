@@ -25,6 +25,7 @@ class Category(db.Model):
 	"""
 	
 	__id = db.StringProperty()
+	num_post = db.IntegerProperty()
 	
 	def __init__(self, id, **kwds):
 		super(Category, self).__init__(**kwds)
@@ -173,6 +174,7 @@ class User(db.Model):
 	__id = db.IntegerProperty()
 	ustate = db.IntegerProperty()
 	last_key = db.StringProperty()
+	num_post = db.IntegerProperty()
 
 	def __init__(self, password=''):
 		super(User, self).__init__()
@@ -228,14 +230,14 @@ class User(db.Model):
 		confirm_code_send(self.getUsername(), code)
 		return True
 
-	def getDBAccount(self):		
+	def get_account(self):		
 		#k = Key.from_path('User', self.getId())
 		#db.get(k)
 		self = db.Model.get_by_id(self.getId())
 		#select * from k_user where user_id=id
 		return self.__username is not None
 
-	def updateDBAccount(self):
+	def update_account(self):
 		self.put()
 		"""
 		update k_user set display_name=getDisplayname()

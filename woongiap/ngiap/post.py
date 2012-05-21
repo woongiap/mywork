@@ -8,9 +8,6 @@ PG_ROW_VIEW = 28
 
 # not used currently
 class State {
-	__div_code
-	__name
-	
 	def __init__(self, div_code, name):
 		self.__div_code = div_code
 		self.__name = name
@@ -21,14 +18,20 @@ class State {
 	def getName():
 		return self.__name
 
-def post_increase_counter($mysqli, $uid, $c):
-	$q = "update k_user set num_post = num_post+1 where user_id=$uid";
-	$mysqli->query($q);
-	$q = "update k_category set num_post = num_post+1 where category_id=$c";
-	$mysqli->query($q);
+def post_increase_counter(uid, cid):
+	key = db.Key.from_path('User', uid)
+	q = "SELECT * FROM User where __key__ = :1", key)
+	user = q.get()
+	user.num_post++
+	user.put()
+	key = db.Key.from_path('Category', cid)
+	q = "SELECT * FROM Category where __key__ = :1", key)
+	category = q.get()
+	category.num_post++
 
-def k_strip_tags($string):
-	return preg_replace('/<[^<>]*>/', ' ', $string)
+def k_strip_tags(s):
+	# TODO: regex replace in python
+	return preg_replace('/<[^<>]*>/', ' ', s)
 
 words = ('.'=>' ',
 		','=>' ',
@@ -43,23 +46,23 @@ words = ('.'=>' ',
 		' pan '=>' panpan ',
 		' yee '=>' yeeyee ',
 		'dms'=>'document management system',
-		' mee '=>' noodle ')
+		' mee '=>' noodle ',) # last comma is okay in python
 
-def expand_words($phrase):
-	global $words;
-	$phrase = ' '.$phrase.' ';
-	return str_ireplace(array_keys($words), array_values($words), $phrase);
+def expand_words(phrase):
+	phrase = ' ' + phrase + ' '
+	# TODO: replace in python
+	return str_ireplace(array_keys($words), array_values($words), $phrase)
 
-def prepare_fulltext_desc($desc):
+def prepare_fulltext_desc(desc):
 	# <b>hello&nbsp;,bro&amp;this&nbsp;&lt;cool&gt;</b> becomes hello&nbsp;,bro&ampthis&nbsp;&lt;cool&gt;
-	$desc = k_strip_tags($desc);
+	desc = k_strip_tags(desc)
 	# hello&nbsp;,bro&amp; becomes hello ,bro&this <cool>
-	$desc = html_entity_decode($desc, ENT_QUOTES, 'utf-8');
+	desc = html_entity_decode($desc, ENT_QUOTES, 'utf-8')
 	# TODO: check if <cool> can be searched, expand 3-char word
 	return trim(expand_words($desc))
 
-def unindex_post($post_id, $mysqli):
-	$any_table_name = k_category_gettabname(ANY_CATEGORY);
+def unindex_post(post_id):
+	any_table_name = k_category_gettabname(ANY_CATEGORY)
 	$q = "delete from $any_table_name where post_id=$post_id";
 	$mysqli->query($q);
 	$q = "select category_id from k_post where post_id=$post_id";
