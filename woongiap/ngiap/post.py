@@ -33,20 +33,20 @@ def k_strip_tags(s):
 	# TODO: regex replace in python
 	return preg_replace('/<[^<>]*>/', ' ', s)
 
-words = ('.'=>' ',
-		','=>' ',
-		';'=>' ',
-		'bkt'=>'bukit',
-		'tmn'=>'taman',
-		'jln'=>'jalan',
-		' bt '=>' batu ',
-		' kl '=>' kuala lumpur ',	
-		' teh '=>' tehteh ',
-		' har '=>' harhar ',
-		' pan '=>' panpan ',
-		' yee '=>' yeeyee ',
-		'dms'=>'document management system',
-		' mee '=>' noodle ',) # last comma is okay in python
+words = {'.':' ',
+		',':' ',
+		';':' ',
+		'bkt':'bukit',
+		'tmn':'taman',
+		'jln':'jalan',
+		' bt ':' batu ',
+		' kl ':' kuala lumpur ',	
+		' teh ':' tehteh ',
+		' har ':' harhar ',
+		' pan ':' panpan ',
+		' yee ':' yeeyee ',
+		'dms':'document management system',
+		' mee ':' noodle '}
 
 def expand_words(phrase):
 	phrase = ' ' + phrase + ' '
