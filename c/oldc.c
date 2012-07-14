@@ -9,19 +9,22 @@ void print_array(int[], int);
 int main()
 {
 	int ia[3] = {1,2,3};
+	int addr;
 	print_array(ia, 3);
 	ia[0] = 10;
 	ia[1] = 20;
 	ia[2] = 30;
 	print_array(ia, 3);
 	*ia = 100;
-	*(ia+1) = 200;
-	*(ia+2) = 300;
+	*(ia + 1) = 200;
+	printf("(ia + 1) : %d\n", (ia + 1));
+	*(ia + 2) = 300;
 	print_array(ia, 3);
-	int addr = ia;
+	addr = ia; /* assign pointer to int */
 	*(int*)addr = 1000;
-	*(int*)(addr+4) = 2000;
-	*(int*)(addr+8) = 3000;
+	*(int*)(addr + 4) = 2000;
+	printf("(addr + 4) : %d\n", (addr + 4));
+	*(int*)(addr + 8) = 3000;
 	print_array(ia, 3);
 
 	printf("char size %d\n", sizeof(char));
