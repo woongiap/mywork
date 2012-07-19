@@ -10,13 +10,14 @@ void accept_function(void (*func)(void));
 int main()
 {
 	void (*fp)(void);
+	float version = 0.1f;
+	int in_c;
+	
 	fp = print_hello;
 	accept_function(print_hello);
-	accept_function(fp);
-	
-	float version = 0.1f;
+	accept_function(fp);	
 	printf("ANSI C program version %f\ntype something:", version);
-	int in_c = getc(stdin);
+	in_c = getc(stdin);
 	printf("\nyou pressed %c", in_c);
 	return 0;
 }
