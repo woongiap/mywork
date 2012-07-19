@@ -44,4 +44,3 @@ int main(int argc, char** args)
 	printf("sizeof(long) : %d\n", sizeof(long));
 	return 0;
 }
-
