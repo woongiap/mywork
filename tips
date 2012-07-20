@@ -1,0 +1,6 @@
+$ echo $((0xB16B00B5))
+2976579765
+I've used this when searching for hex words:
+$ grep "^[0-9a-flogs]*$" /usr/share/dict/words |
+tr logs 1065 | awk '{print length, $0}' |
+sort -n | cut -f2- -d' '
