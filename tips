@@ -4,3 +4,35 @@ I've used this when searching for hex words:
 $ grep "^[0-9a-flogs]*$" /usr/share/dict/words |
 tr logs 1065 | awk '{print length, $0}' |
 sort -n | cut -f2- -d' '
+
+info compgen
+
+sudo apt-add-repository ppa:ubuntu-x-swat/x-updates
+sudo apt-get update
+sudo apt-get install nvidia-current
+sudo reboot
+
+# tried, not really working
+/etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT=text
+/etc/init.d/lightdm start
+
+# what is this?
+ldconfig -v?
+
+# install gnome3 on ubuntu
+sudo add-apt-repository ppa:gnome3-team/gnome3
+sudo apt-get update
+sudo apt-get install gnome-shell
+# optional
+sudo apt-get install gnome-tweak-tool
+
+# install xfce on ubuntu
+sudo aptitude update && sudo aptitude install xubuntu-desktop
+
+insmod # to load a module manually
+rmmod # to remove modules that are not currently being used
+lsmod # to list the modules that are currently loaded
+modinfo # to display information on currently loaded modules
+modprobe # check dependency and install
+ 
