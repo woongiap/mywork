@@ -1,3 +1,0 @@
-# to check current running shell
-ps -p $$
-

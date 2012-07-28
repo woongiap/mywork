@@ -1,1 +1,0 @@
-lpr <filename> -P ecs
