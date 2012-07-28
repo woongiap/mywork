@@ -1,2 +1,0 @@
-# convert decimal 20 to hex
-echo "obase=16 ; 20" | bc
