@@ -46,4 +46,3 @@ int avg(int n, int* no)
 	}
 	return sum/n;
 }
-
