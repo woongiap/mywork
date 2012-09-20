@@ -10,6 +10,7 @@
 }
 
 - (void)printNum;
+-(void)fun:(int)a p2:(int)n;
 
 @end
 
@@ -19,6 +20,13 @@
 - (void)printNum
 {
     printf("%d\n", number);
+}
+
+-(void)fun:(int)a p2:(int)n
+{
+	/*
+	do nothing
+	*/
 }
 
 @end
