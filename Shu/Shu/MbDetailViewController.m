@@ -5,10 +5,9 @@
 //  Created by Steven Yong on 9/23/12.
 //  Copyright (c) 2012 Ngiap. All rights reserved.
 //
-
 #import "MbDetailViewController.h"
 
-@interface MbDetailViewController ()
+@interface MbDetailViewController () <UITextFieldDelegate>
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
@@ -16,6 +15,7 @@
 @implementation MbDetailViewController
 
 #pragma mark - Managing the detail item
+@synthesize isbn;
 
 - (void)setDetailItem:(id)newDetailItem
 {
@@ -45,10 +45,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    self->labelString = @"initial string";
+    self.detailDescriptionLabel.text = self->labelString;
 }
 
 - (void)viewDidUnload
 {
+    [self setIsbn:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -83,4 +86,47 @@
 }
 */
 
+- (IBAction)loadBook:(id)sender {
+    NSString *url =
+        [NSString stringWithFormat:@"http://openlibrary.org/api/books?bibkeys=ISBN:%@&jscmd=data&format=json", self.isbn.text];
+    NSLog(@"url is %@]", url);
+    NSURLRequest *theRequest =
+        [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                          timeoutInterval:60.0];
+    NSURLConnection *theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
+    if (!theConnection) {
+        NSLog(@"Error is %@\n", @"could not load");
+    }
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    if (!self->urlData)
+        self->urlData = [[NSMutableData alloc] init];
+    [self->urlData appendData:[data copy]];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    NSError *error = nil;
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:self->urlData
+                options:NSJSONReadingMutableContainers error:&error];
+    NSString *key = [NSString stringWithFormat:@"ISBN:%@", self.isbn.text];
+    NSDictionary *d = [dict valueForKey:key];
+    NSArray *allkeys = [d allKeys];
+    for (NSString *key in allkeys) {
+        NSLog(@"key %@ [%@]---", key, [d valueForKey:key]);
+    }
+    NSLog(@"COUNT OF %d \n", [d count]);
+    self.detailDescriptionLabel.text = [d valueForKey:@"title"];
+    self->urlData = nil;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)f
+{
+    if (f == self.isbn) {
+        [f resignFirstResponder];
+    }
+    return YES;
+}
 @end
