@@ -47,6 +47,30 @@
     [self configureView];
     self->labelString = @"initial string";
     self.detailDescriptionLabel.text = self->labelString;
+    
+    UIBarButtonItem *flexibleSpaceButtonItem = [[UIBarButtonItem alloc]
+                                                initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                target:nil action:nil];
+    // Create and configure the segmented control
+    UISegmentedControl *sortToggle = [[UISegmentedControl alloc]
+                                      initWithItems:[NSArray arrayWithObjects:@"Ascending",
+                                                     @"Descending", nil]];
+    sortToggle.segmentedControlStyle = UISegmentedControlStyleBar;
+    sortToggle.selectedSegmentIndex = 0;
+    [sortToggle addTarget:self action:@selector(toggleSorting:)
+         forControlEvents:UIControlEventValueChanged];
+    
+    // Create the bar button item for the segmented control
+    UIBarButtonItem *sortToggleButtonItem = [[UIBarButtonItem alloc]
+                                             initWithCustomView:sortToggle];
+    
+    // Set our toolbar items
+    self.toolbarItems = [NSArray arrayWithObjects:
+                         flexibleSpaceButtonItem,
+                         sortToggleButtonItem,
+                         flexibleSpaceButtonItem,
+                         nil];
+    ((UINavigationController *)self.parentViewController).toolbarHidden = NO;
 }
 
 - (void)viewDidUnload

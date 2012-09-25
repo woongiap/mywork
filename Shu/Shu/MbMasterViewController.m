@@ -10,7 +10,10 @@
 
 #import "MbDetailViewController.h"
 
-@interface MbMasterViewController ()
+@interface MbMasterViewController () <UIActionSheetDelegate>
+{
+    UIBarButtonItem *sheetButtonItem;
+}
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
@@ -32,6 +35,24 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (MbDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    // toolbar
+    ((UINavigationController *)self.parentViewController).toolbarHidden = NO;
+    // Create the bar button item for the segmented control
+    sheetButtonItem =
+    [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                 target:self
+                                                 action:@selector(displaySheet:)];
+    
+    // Set our toolbar items
+    self.toolbarItems = [NSArray arrayWithObjects:sheetButtonItem, nil];
+}
+
+- (void)displaySheet:(id)sender
+{
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Sheet title" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"destructive" otherButtonTitles:nil];
+    sheet.actionSheetStyle = UIActionSheetStyleDefault;
+    
+    [sheet showFromBarButtonItem:sender animated:YES];
 }
 
 - (void)viewDidUnload
