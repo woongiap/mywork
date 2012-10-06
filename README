@@ -1,2 +1,5 @@
 this is the repo for my own works
 
+# build objective-c code
+gcc -o out source.m -lobjc
+

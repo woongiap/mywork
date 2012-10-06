@@ -1,25 +1,10 @@
-// hello.m
-#import <objc/Object.h>
-#import <stdio.h>
+#import "Number.h"
 
-@interface Number: Object
-{
-@public
-    int number;
-    
-}
-
-- (void)printNum;
--(void)fun:(int)a p2:(int)n;
-
-@end
-
-@implementation Number: Object
-
+@implementation Number
 
 - (void)printNum
 {
-    printf("%d\n", number);
+    printf("%s is %d\n", "Result", number);
 }
 
 -(void)fun:(int)a p2:(int)n
@@ -31,12 +16,10 @@
 
 @end
 
-int main(void)
+int main(int argc, const char *argv[])
 {
-    Number *myNumber = [Number new]; // equal to [[Number alloc] init]
-
+    Number *myNumber = [[Number alloc] init];
     myNumber->number = 6;
-
     [myNumber printNum];
 
     return 0;
